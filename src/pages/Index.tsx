@@ -1,8 +1,8 @@
-
 import React from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, Phone, Film, Shield, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -37,11 +37,11 @@ const Index = () => {
             Scale your voice, replies, and personality across comments, DMs, and calls — effortlessly.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white">
-              Create Your Clone
+            <Button size="lg" className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white" asChild>
+              <Link to="/dashboard">Create Your Clone</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-[#33C3F0] text-[#33C3F0] hover:bg-[#33C3F0]/10">
-              Try Demo
+            <Button size="lg" variant="outline" className="border-[#33C3F0] text-[#33C3F0] hover:bg-[#33C3F0]/10" asChild>
+              <Link to="/dashboard">Try Demo</Link>
             </Button>
           </div>
         </div>
@@ -507,21 +507,22 @@ const Index = () => {
       </section>
 
       {/* CTA Footer */}
-      <section className="bg-[#222222]">
-        <div className="container mx-auto py-20">
-          <div className="text-center max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Ready to Clone Your Voice & Scale Like Never Before?
-            </h2>
-            <p className="text-gray-300 mb-8 text-xl">
-              Join thousands of creators who are scaling their engagement while saving time.
-            </p>
-            <Button size="lg" className="bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] hover:opacity-90 text-white">
-              Launch Your AI Clone
+      <footer className="bg-[#222222] py-16">
+        <div className="container mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Scale Your Creator Presence?</h2>
+          <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+            Join thousands of creators who are saving time and delighting their audience with AI clones.
+          </p>
+          <div className="flex justify-center gap-4">
+            <Button size="lg" className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white" asChild>
+              <Link to="/dashboard">Get Started Free</Link>
+            </Button>
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <a href="#pricing">View Pricing</a>
             </Button>
           </div>
         </div>
-      </section>
+      </footer>
 
       {/* Footer */}
       <footer className="bg-[#1A1F2C] py-12">
@@ -540,7 +541,7 @@ const Index = () => {
                 </a>
                 <a href="#" className="text-gray-400 hover:text-[#9b87f5]">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
                   </svg>
                 </a>
                 <a href="#" className="text-gray-400 hover:text-[#9b87f5]">
