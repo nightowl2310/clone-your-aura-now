@@ -582,7 +582,7 @@ const Index = () => {
             <p className="text-center text-gray-400">© {new Date().getFullYear()} CreatorClone.ai. All rights reserved.</p>
           </div>
         </div>
-      </section>
+      </footer>
 
       {/* Chat Assistant */}
       <div className="fixed bottom-6 right-6 z-50">
