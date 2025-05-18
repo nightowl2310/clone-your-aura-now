@@ -44,7 +44,7 @@ const Index = () => {
               <Link to="/dashboard">Create Your Clone</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-[#33C3F0] text-[#33C3F0] hover:bg-[#33C3F0]/10" asChild>
-              <Link to="/dashboard">Try Demo</Link>
+              <Link to="/dashboard">Video Guide</Link>
             </Button>
           </div>
         </div>

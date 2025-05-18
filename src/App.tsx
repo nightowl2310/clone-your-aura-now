@@ -17,6 +17,7 @@ import Refer from "./pages/Refer";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import React from "react";
+import CreateAutomations from "./pages/CreateAutomations";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +40,10 @@ const App = () => (
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/refer" element={<Refer />} />
             <Route path="/settings" element={<Settings />} />
+            <Route path="/clone-tuning" element={<CloneTuning />} />
+           
+            
+
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

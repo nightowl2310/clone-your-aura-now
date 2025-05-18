@@ -3,7 +3,7 @@ import React from "react";
 import Header from "@/components/dashboard/Header";
 import Sidebar from "@/components/dashboard/Sidebar";
 
-const TuneDMReplies = () => {
+const TuneStoryReplies = () => {
   return (
     <div className="min-h-screen flex bg-[#121212] text-white">
       <Sidebar />
@@ -23,4 +23,4 @@ const TuneDMReplies = () => {
   );
 };
 
-export default TuneDMReplies;
+export default TuneStoryReplies;
