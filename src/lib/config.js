@@ -1,0 +1,4 @@
+// src/lib/config.js
+export const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  " https://9c99-2401-4900-1c19-cfba-710c-fd43-c208-6405.ngrok-free.app ";

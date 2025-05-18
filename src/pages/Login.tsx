@@ -1,6 +1,6 @@
 // LoginPage.tsx
 import React from "react";
-
+import { API_BASE_URL } from "../lib/config";
 const Login: React.FC = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#121212] text-white px-4">
@@ -58,15 +58,22 @@ const Login: React.FC = () => {
           />
           Login with Google
         </button>
-
-        <button className="w-full flex items-center justify-center gap-2 py-2 rounded-md font-medium bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            alt="Instagram"
-            className="w-5 h-5"
-          />
-          Continue with Instagram
-        </button>
+        <a
+          href={
+            "https://www.instagram.com/oauth/authorize?enable_fb_login=0&force_authentication=1&client_id=566718126051181&redirect_uri=" +
+            API_BASE_URL +
+            "/api/oauth/instagram/callback&response_type=code&scope=instagram_business_basic%2Cinstagram_business_manage_messages%2Cinstagram_business_manage_comments%2Cinstagram_business_content_publish%2Cinstagram_business_manage_insights"
+          }
+        >
+          <button className="w-full flex items-center justify-center gap-2 py-2 rounded-md font-medium bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+              alt="Instagram"
+              className="w-5 h-5"
+            />
+            Continue with Instagram
+          </button>
+        </a>
 
         <p className="text-center text-sm mt-6 text-gray-300">
           Don’t have an account?{" "}
