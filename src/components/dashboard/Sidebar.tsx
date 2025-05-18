@@ -2,7 +2,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { BarChartHorizontal, MessageSquare, Users, Gift, Settings, LogOut, Bot } from "lucide-react";
+import { BarChartHorizontal, Users, Gift, Settings, LogOut, Bot } from "lucide-react";
 
 interface SidebarItemProps {
   icon: React.ElementType;
