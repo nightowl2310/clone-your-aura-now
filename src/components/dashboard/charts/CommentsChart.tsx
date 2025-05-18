@@ -84,7 +84,7 @@ const CommentsChart = () => {
               className={`px-2.5 ${timeframe === "30d" ? "bg-[#9b87f5]/20 text-[#9b87f5]" : ""}`}
               onClick={() => setTimeframe("30d")}
             >
-              30 Days
+              <div className="text-white">30 Days</div>
             </Button>
           </div>
         </div>

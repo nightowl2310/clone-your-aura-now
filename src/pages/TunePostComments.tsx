@@ -63,12 +63,16 @@ const TunePostComments = () => {
 
               {/* Flexed Select and Add buttons */}
               <div className="flex items-center space-x-3">
+                
                 <button
                   onClick={() => navigate("/select-post")}
-                  className="flex-1 bg-[#232323] text-white py-2 rounded-md border border-gray-600 hover:bg-[#2e2e2e] transition"
+                  className="flex-1 bg-[#232323] text-white py-2 rounded-md border border-gray-600 
+                            hover:bg-[#2f2f2f] hover:scale-105 hover:shadow-lg 
+                            transition-transform duration-200 ease-in-out"
                 >
                   Select
                 </button>
+
                 <button className="bg-[#9b87f5] px-3 py-2 rounded-md text-sm font-medium hover:bg-[#856fff] transition">
                   Add →
                 </button>
