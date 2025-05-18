@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/dashboard/Header";
@@ -69,8 +70,7 @@ const CloneTuning = () => {
                   className="cursor-pointer transition-all duration-300 hover:scale-105"
                 >
                   <Card className="h-full bg-[#1A1F2C] border-none rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-[rgba(155,135,245,0.15)] hover:bg-[#232938] transition-all duration-300">
-                    <CardContent className="p-6">
-                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-4 bg-gradient-to-br ${option.color} shadow-md`}>
+                    <CardContent className="p-6">                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-4 bg-gradient-to-br ${option.color} shadow-md`}>
                         <span>{option.icon}</span>
                       </div>
                       <h3 className="text-xl font-semibold mb-4 text-white">{option.title}</h3>

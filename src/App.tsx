@@ -39,10 +39,9 @@ const App = () => (
             <Route path="/tune-dm-replies" element={<TuneDMReplies />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/refer" element={<Refer />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/clone-tuning" element={<CloneTuning />} />
+            <Route path="/settings" element={<Settings />} />            <Route path="/clone-tuning" element={<CloneTuning />} />
             <Route path="/login" element={<Login />} />
-
+            
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
