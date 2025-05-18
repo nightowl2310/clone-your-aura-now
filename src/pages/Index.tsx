@@ -15,13 +15,28 @@ const Index = () => {
           </span>
         </div>
         <div className="space-x-4 hidden md:block">
-          <Button variant="ghost" className="text-white hover:text-[#9b87f5]">Features</Button>
-          <Button variant="ghost" className="text-white hover:text-[#9b87f5]">Pricing</Button>
-          <Button variant="ghost" className="text-white hover:text-[#9b87f5]">Testimonials</Button>
+        <a href="#features">
+          <Button variant="ghost" className="text-white hover:text-[#9b87f5]">
+            Features
+          </Button>
+        </a>
+
+          <a href="#Pricing">
+          <Button variant="ghost" className="text-white hover:text-[#9b87f5]">
+            Pricing
+          </Button>
+          </a>
+
+
+          <a href="#Testimonials">
+          <Button variant="ghost" className="text-white hover:text-[#9b87f5]">
+            Testimonials
+          </Button>
+          </a>
           <Button variant="ghost" className="text-white hover:text-[#9b87f5]">FAQ</Button>
         </div>
         <div>
-          <Button variant="outline" className="mr-2 border-[#9b87f5] text-white hover:bg-[#9b87f5]/10">Login</Button>
+          <Button  className="mr-2 border-[#9b87f5] text-white hover:bg-[#9b87f5]/10">Login</Button>
           <Button className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white">Sign Up</Button>
         </div>
       </nav>
@@ -40,10 +55,10 @@ const Index = () => {
           </p>
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white" asChild>
-              <Link to="/dashboard">Create Your Clone</Link>
+              <Link to="/Automations">Create Your Clone</Link>
             </Button>
             <Button size="lg" variant="outline" className="border-[#33C3F0] text-[#33C3F0] hover:bg-[#33C3F0]/10" asChild>
-              <Link to="/dashboard">Video Guide</Link>
+              <Link to="">Video Guide</Link>
             </Button>
           </div>
         </div>
@@ -188,98 +203,141 @@ const Index = () => {
 
       {/* Features */}
       <section className="container mx-auto py-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Key Features</h2>
+        <h2
+          id="features"
+          className="text-3xl md:text-4xl font-bold text-center mb-4"
+        >
+          Key Features
+        </h2>
         <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
-          Everything you need to scale your creator presence and engage with your audience.
+          Everything you need to scale your creator presence and engage with
+          your audience.
         </p>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
                 <MessageSquare className="text-white" />
               </div>
-              <CardTitle className="text-white">AI Replies</CardTitle>
-              <CardDescription className="text-gray-400">YouTube Comments & DMs</CardDescription>
+              <CardTitle className="text-white">
+                Reply Like a Pro (Without Lifting a Finger)
+              </CardTitle>
+              <CardDescription className="text-gray-400">
+                Let AI handle the replies — you stay in the spotlight.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-300">
-                Automatically reply to comments and messages in your voice and style, with contextual awareness of your content.
+                Auto-respond to every comment, DM, and story mention (upcoming)
+                — all in your unique voice and style. Whether it's Instagram or
+                YouTube, watch your engagement soar as your audience feels heard
+                and hyped. Creators have seen comments jump from 50 to over 500
+                per post — without typing a word.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="ghost" className="text-[#9b87f5] p-0 hover:text-[#33C3F0] hover:bg-transparent">
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#33C3F0] hover:bg-transparent"
+              >
                 Learn more <ArrowRight size={16} className="ml-2" />
               </Button>
             </CardFooter>
           </Card>
-          
+
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#D946EF] flex items-center justify-center mb-4">
                 <Phone className="text-white" />
               </div>
-              <CardTitle className="text-white">Voice Cloning</CardTitle>
-              <CardDescription className="text-gray-400">Fan Calls & Voice Messages</CardDescription>
+              <CardTitle className="text-white">
+                Talk to Fans Without Saying a Word
+              </CardTitle>
+              <CardDescription className="text-gray-400">
+                Your AI twin, your voice — now always available.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-300">
-                Your AI clone can talk to fans with your voice, creating personalized audio messages and taking calls.
+                Let your AI clone handle fan calls and voice messages — all in
+                your voice! Surprise your fans with “you” even when you’re off
+                creating. From shoutouts to quick chats, stay connected 24/7
+                without lifting a mic.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="ghost" className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent">
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+              >
                 Learn more <ArrowRight size={16} className="ml-2" />
               </Button>
             </CardFooter>
           </Card>
-          
+
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#33C3F0] to-[#9b87f5] flex items-center justify-center mb-4">
                 <Film className="text-white" />
               </div>
-              <CardTitle className="text-white">Memory Training</CardTitle>
-              <CardDescription className="text-gray-400">From Past Videos & Tweets</CardDescription>
+              <CardTitle className="text-white">
+                Boost Engagement on Autopilot 🚀
+              </CardTitle>
+              <CardDescription className="text-gray-400">
+                Let AI turn comments into connections — and fans into followers.
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-300">
-                Your clone is trained on your content history, ensuring it has deep knowledge of your opinions and expertise.
+                Automated replies to every comment and message supercharge your
+                engagement. IG’s algorithm loves the action — and rewards you by
+                showing your content to more people. Watch your follower count
+                grow, day by day, while you focus on creating.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="ghost" className="text-[#9b87f5] p-0 hover:text-[#33C3F0] hover:bg-transparent">
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+              >
                 Learn more <ArrowRight size={16} className="ml-2" />
               </Button>
             </CardFooter>
           </Card>
-          
+
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#D946EF] to-[#33C3F0] flex items-center justify-center mb-4">
                 <Shield className="text-white" />
               </div>
               <CardTitle className="text-white">Safe & Moderated</CardTitle>
-              <CardDescription className="text-gray-400">Always-On AI Protection</CardDescription>
+              <CardDescription className="text-gray-400">
+                Always-On AI Protection
+              </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-300">
-                Advanced moderation ensures your AI clone always stays on brand and responds appropriately.
+                Advanced moderation ensures your AI clone always stays on brand
+                and responds appropriately.
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="ghost" className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent">
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+              >
                 Learn more <ArrowRight size={16} className="ml-2" />
               </Button>
             </CardFooter>
           </Card>
         </div>
-      </section>
+      </section>
 
       {/* Testimonials */}
       <section className="bg-[#222222] py-20">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Creator Testimonials</h2>
+          <h2 id="Testimonials" className="text-3xl md:text-4xl font-bold text-center mb-4">Creator Testimonials</h2>
           <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
             See how other creators are scaling their engagement with CreatorClone.ai.
           </p>
@@ -290,7 +348,7 @@ const Index = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
                   <div>
-                    <p className="font-bold">@CodeWithAryan</p>
+                    <p  className="font-bold">@CodeWithAryan</p>
                     <p className="text-sm text-gray-400">100K Subscribers</p>
                   </div>
                 </div>
@@ -359,7 +417,7 @@ const Index = () => {
 
       {/* Pricing */}
       <section className="container mx-auto py-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
+        <h2 id="Pricing" className="text-3xl md:text-4xl font-bold text-center mb-4">Simple, Transparent Pricing</h2>
         <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
           Choose the plan that fits your creator journey.
         </p>
@@ -370,7 +428,9 @@ const Index = () => {
               <CardTitle className="text-white">Free Plan</CardTitle>
               <CardDescription className="text-gray-400">Get started with basic features</CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">$0</span>
+                <p className="text-white"><span className="text-4xl font-bold" >$0</span>
+                <span className="text-gray-400 ml-2">/month</span>
+                </p>
                 <span className="text-gray-400 ml-2">/month</span>
               </div>
             </CardHeader>
@@ -379,31 +439,32 @@ const Index = () => {
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>10 AI comment replies per day</p>
+                <p className="text-white">10 AI comment replies per day</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Basic comment AI training</p>
+                <p className="text-white">Basic comment AI training</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Standard moderation</p>
+                <p className="text-white">Standard moderation</p>
               </div>
               <div className="flex items-center text-gray-500">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <p>No voice cloning</p>
+                <p className="text-white">No voice cloning</p>
+
               </div>
               <div className="flex items-center text-gray-500">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
                 </svg>
-                <p>No multi-channel support</p>
+                <p className="text-white">No multi-channel support</p>
               </div>
             </CardContent>
             <CardFooter>
@@ -419,8 +480,9 @@ const Index = () => {
               <CardTitle className="text-white">Creator Plan</CardTitle>
               <CardDescription className="text-gray-400">For serious content creators</CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">$29</span>
+                <p className="text-white"><span className="text-4xl font-bold" >$29</span>
                 <span className="text-gray-400 ml-2">/month</span>
+                </p>
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -428,31 +490,31 @@ const Index = () => {
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Unlimited comment replies</p>
+                <p className="text-white">Unlimited comment replies</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Full voice clone technology</p>
+                <p className="text-white">Full voice clone technology</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Advanced content training</p>
+                <p className="text-white">Advanced content training</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>YouTube & Instagram integration</p>
+                <p className="text-white">YouTube & Instagram integration</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Enhanced AI moderation</p>
+                <p className="text-white">Enhanced AI moderation</p>
               </div>
             </CardContent>
             <CardFooter>
@@ -465,7 +527,9 @@ const Index = () => {
               <CardTitle className="text-white">Studio Plan</CardTitle>
               <CardDescription className="text-gray-400">For agencies & large creators</CardDescription>
               <div className="mt-4">
-                <span className="text-4xl font-bold">$99</span>
+                <p className="text-white"><span className="text-4xl font-bold" >$99</span>
+                <span className="text-gray-400 ml-2">/month</span>
+                </p>
                 <span className="text-gray-400 ml-2">/month</span>
               </div>
             </CardHeader>
@@ -474,31 +538,31 @@ const Index = () => {
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Everything in Creator Plan</p>
+                <p className="text-white">Everything in Creator Plan</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Multi-channel AI deployment</p>
+                <p className="text-white">Multi-channel AI deployment</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Advanced analytics dashboard</p>
+                <p className="text-white">Advanced analytics dashboard</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Multiple AI clone profiles</p>
+                <p className="text-white">Multiple AI clone profiles</p>
               </div>
               <div className="flex items-center">
                 <svg className="w-5 h-5 text-[#9b87f5] mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
-                <p>Priority support & onboarding</p>
+                <p className="text-white">Priority support & onboarding</p>
               </div>
             </CardContent>
             <CardFooter>
@@ -519,7 +583,7 @@ const Index = () => {
             <Button size="lg" className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white" asChild>
               <Link to="/dashboard">Get Started Free</Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button size="lg"  className="border-white text-white hover:bg-white/10">
               <a href="#pricing">View Pricing</a>
             </Button>
           </div>
