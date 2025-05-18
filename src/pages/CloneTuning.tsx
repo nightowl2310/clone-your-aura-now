@@ -53,7 +53,11 @@ const CloneTuning = () => {
           <Header />
           
           <div className="mt-8">
-            <h2 className="text-2xl font-bold mb-6">Clone Tuning</h2>
+            <div className="flex items-center mb-6">
+              <MessageSquare className="text-[#9b87f5] h-6 w-6 mr-2" />
+              <h2 className="text-2xl font-bold">Clone Tuning</h2>
+            </div>
+            
             <p className="text-muted-foreground mb-8">
               Customize how your AI clone interacts with your audience across different platforms.
             </p>
@@ -65,9 +69,9 @@ const CloneTuning = () => {
                   onClick={() => navigate(option.route)}
                   className="cursor-pointer transition-all duration-300 hover:scale-105"
                 >
-                  <Card className="h-full bg-[#1A1F2C] border-none shadow-xl hover:shadow-2xl hover:bg-[#232938] transition-all duration-300">
+                  <Card className="h-full bg-[#1A1F2C] border-none rounded-2xl shadow-xl hover:shadow-2xl hover:shadow-[rgba(155,135,245,0.15)] hover:bg-[#232938] transition-all duration-300">
                     <CardContent className="p-6">
-                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-4 bg-gradient-to-br ${option.color}`}>
+                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-4 bg-gradient-to-br ${option.color} shadow-md`}>
                         <span>{option.icon}</span>
                       </div>
                       <h3 className="text-xl font-semibold mb-4">{option.title}</h3>

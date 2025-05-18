@@ -1,22 +1,25 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { MessageSquare, BarChartHorizontal, Bell, Settings, LogOut } from "lucide-react";
+import { BarChartHorizontal, MessageSquare, Users, Gift, Settings, LogOut, Bot } from "lucide-react";
 
 interface SidebarItemProps {
   icon: React.ElementType;
   href: string;
-  isActive?: boolean;
   label: string;
 }
 
-const SidebarItem = ({ icon: Icon, href, isActive = false, label }: SidebarItemProps) => {
+const SidebarItem = ({ icon: Icon, href, label }: SidebarItemProps) => {
+  const location = useLocation();
+  const isActive = location.pathname === href || 
+                   (href !== "/" && href !== "/dashboard" && location.pathname.startsWith(href));
+  
   return (
     <Link
       to={href}
       className={cn(
-        "flex items-center py-3 px-4 rounded-lg transition-colors",
+        "flex items-center py-3 px-4 rounded-2xl transition-colors shadow-sm hover:shadow-md",
         isActive
           ? "bg-[#9b87f5]/20 text-[#9b87f5]"
           : "text-muted-foreground hover:bg-accent hover:text-accent-foreground"
@@ -39,8 +42,9 @@ const Sidebar = () => {
       </div>
       <nav className="space-y-2 flex-1">
         <SidebarItem icon={BarChartHorizontal} href="/dashboard" label="Dashboard" />
-        <SidebarItem icon={MessageSquare} href="/clone-tuning" isActive={window.location.pathname === "/clone-tuning"} label="Clone Tuning" />
-        <SidebarItem icon={Bell} href="/notifications" label="Notifications" />
+        <SidebarItem icon={Bot} href="/automations" label="Automations" />
+        <SidebarItem icon={Users} href="/contacts" label="Contacts" />
+        <SidebarItem icon={Gift} href="/refer" label="Refer & Earn" />
         <SidebarItem icon={Settings} href="/settings" label="Settings" />
       </nav>
       <div className="mt-auto">
