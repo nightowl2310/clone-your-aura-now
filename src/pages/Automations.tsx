@@ -4,43 +4,45 @@ import Header from "@/components/dashboard/Header"; // Top header component
 import Sidebar from "@/components/dashboard/Sidebar"; // Sidebar component
 import { Button } from "@/components/ui/button"; // UI button component
 import { Bot, Search, Plus } from "lucide-react"; // Icon imports
+import { useEffect } from "react"; // React hooks
+import { useSearchParams } from "react-router-dom";
+import axios from "axios"; // Axios for API calls
+import { API_BASE_URL } from "../lib/config"; // API base URL
+// For URL search params
 
 const Automations = () => {
-  const navigate = useNavigate(); // Navigation hook from react-router
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
+  const userId = searchParams.get("user");
 
-  // Component state holding a list of automation objects
   const [automations, setAutomations] = useState([
-    {
-      name: "Instagram Auto-Reply",      // Name of the automation
-      type: "Comment Reply",             // Type/category
-      runs: 1203,                        // Total times run
-      status: "Active",                 // Status (Active/Inactive)
-      lastPublished: "2 days ago",      // Last published date
-      live: true                        // Live toggle state (used in the switch)
-    },
-    {
-      name: "Story Response",
-      type: "Story Reply",
-      runs: 543,
-      status: "Active",
-      lastPublished: "5 days ago",
-      live: true
-    },
-    {
-      name: "DM Assistant",
-      type: "Direct Message",
-      runs: 2548,
-      status: "Inactive",
-      lastPublished: "2 weeks ago",
-      live: false
-    }
+    // ... default automations
   ]);
 
+  // ✅ Call Instagram API when redirected here
+  useEffect(() => {
+    if (userId) {
+      const fetchData = async () => {
+        try {
+          const response = await axios.get(
+            `http://localhost:8080/api/oauth/instagram`,
+            {
+              params: { userId },
+            }
+          );
+          console.log("Instagram automation API response:", response.data);
+        } catch (error) {
+          console.error("Error fetching Instagram data:", error);
+        }
+      };
+      fetchData();
+    }
+  }, [userId]);
   // Function to toggle the 'live' property of a specific automation
   const toggleLiveStatus = (index: number) => {
-    const updated = [...automations];        // Clone array to maintain immutability
+    const updated = [...automations]; // Clone array to maintain immutability
     updated[index].live = !updated[index].live; // Toggle the boolean value
-    setAutomations(updated);                 // Update state
+    setAutomations(updated); // Update state
   };
 
   return (
@@ -63,7 +65,7 @@ const Automations = () => {
               </div>
 
               {/* Button to create new automation */}
-              <Button 
+              <Button
                 onClick={() => navigate("/automation-builder")}
                 className="bg-gradient-to-r from-[#9b87f5] to-[#3B34DC] hover:shadow-[0_0_15px_rgba(155,135,245,0.5)] transition-all duration-300"
               >
@@ -108,7 +110,7 @@ const Automations = () => {
                 </thead>
                 <tbody>
                   {automations.map((automation, index) => (
-                    <tr 
+                    <tr
                       key={index}
                       className="border-b border-border hover:bg-[#1A1F2C] transition-colors"
                       // ⛔ No more row-level onClick (removed navigation)
@@ -126,7 +128,9 @@ const Automations = () => {
                       <td className="py-4">
                         <span
                           className={`inline-block w-2 h-2 rounded-full mr-2 ${
-                            automation.status === 'Active' ? 'bg-green-500' : 'bg-red-500'
+                            automation.status === "Active"
+                              ? "bg-green-500"
+                              : "bg-red-500"
                           }`}
                         ></span>
                         {automation.status}
@@ -139,13 +143,13 @@ const Automations = () => {
                       <td className="py-4 pr-4">
                         <div
                           className={`w-12 h-6 rounded-full ${
-                            automation.live ? 'bg-[#9b87f5]' : 'bg-gray-600'
+                            automation.live ? "bg-[#9b87f5]" : "bg-gray-600"
                           } relative cursor-pointer`}
                           onClick={() => toggleLiveStatus(index)} // Toggle live state on click
                         >
                           <div
                             className={`absolute h-4 w-4 rounded-full bg-white top-1 transition-all ${
-                              automation.live ? 'right-1' : 'left-1'
+                              automation.live ? "right-1" : "left-1"
                             }`}
                           />
                         </div>
@@ -155,7 +159,6 @@ const Automations = () => {
                 </tbody>
               </table>
             </div>
-
           </div>
         </div>
       </main>
