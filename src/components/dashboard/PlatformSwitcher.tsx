@@ -2,6 +2,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { useNavigate } from "react-router-dom";
 
 interface Platform {
   id: string;
@@ -20,6 +21,13 @@ const PlatformSwitcher = ({
   activePlatform,
   onPlatformChange,
 }: PlatformSwitcherProps) => {
+  const navigate = useNavigate();
+
+  const handlePlatformChange = (platformId: string) => {
+    onPlatformChange(platformId);
+    navigate(`/dashboard?platform=${platformId}`);
+  };
+
   return (
     <div className="bg-[#1A1F2C] rounded-full p-1 flex space-x-1 mb-6 max-w-md mx-auto">
       {platforms.map((platform) => (
@@ -29,11 +37,10 @@ const PlatformSwitcher = ({
           className={cn(
             "flex-1 rounded-full",
             activePlatform === platform.id
-              ? "bg-[#9b87f5] text-white hover:bg-[#9b87f5]/90"
+              ? "bg-[#3B34DC] text-white hover:bg-[#302BA8]"
               : "text-muted-foreground opacity-70 hover:bg-[#333333] hover:opacity-100"
           )}
-          disabled={platform.id !== "instagram"} // Only Instagram is active
-          onClick={() => onPlatformChange(platform.id)}
+          onClick={() => handlePlatformChange(platform.id)}
         >
           <span className="mr-2">{platform.icon}</span>
           {platform.name}

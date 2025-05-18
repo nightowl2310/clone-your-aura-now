@@ -16,7 +16,7 @@ const Header = () => {
     <header className="flex justify-between items-center py-4">
       <div>
         <h1 className="text-2xl font-bold">
-          Welcome back, Aryan{" "}
+          Welcome, Aryan{" "}
           <span role="img" aria-label="wave">
             👋
           </span>
@@ -28,7 +28,7 @@ const Header = () => {
       <div className="flex items-center space-x-4">
         <Button variant="ghost" size="icon" className="relative">
           <Bell className="h-5 w-5" />
-          <span className="absolute top-0 right-0 w-2 h-2 bg-[#9b87f5] rounded-full"></span>
+          <span className="absolute top-0 right-0 w-2 h-2 bg-[#3B34DC] rounded-full"></span>
         </Button>
         <Button variant="ghost" size="icon">
           <Settings className="h-5 w-5" />
@@ -36,7 +36,7 @@ const Header = () => {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="ghost" className="flex items-center space-x-2">
-              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] flex items-center justify-center text-white">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#3B34DC] to-[#33C3F0] flex items-center justify-center text-white">
                 A
               </div>
               <span className="hidden md:inline">Aryan</span>

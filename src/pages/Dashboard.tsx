@@ -1,5 +1,6 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import Header from "@/components/dashboard/Header";
 import Sidebar from "@/components/dashboard/Sidebar";
 import PlatformSwitcher from "@/components/dashboard/PlatformSwitcher";
@@ -14,12 +15,24 @@ import ActionButtons from "@/components/dashboard/ActionButtons";
 import Assistant from "@/components/dashboard/Assistant";
 
 const Dashboard = () => {
-  const [activePlatform, setActivePlatform] = useState("instagram");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const platformParam = searchParams.get("platform");
+  const [activePlatform, setActivePlatform] = useState(platformParam || "instagram");
+
+  useEffect(() => {
+    if (platformParam && (platformParam === "instagram" || platformParam === "youtube")) {
+      setActivePlatform(platformParam);
+    }
+  }, [platformParam]);
+
+  const handlePlatformChange = (platformId: string) => {
+    setActivePlatform(platformId);
+    setSearchParams({ platform: platformId });
+  };
 
   const platforms = [
     { id: "instagram", name: "Instagram", icon: "📸" },
     { id: "youtube", name: "YouTube", icon: "▶️" },
-    { id: "tiktok", name: "TikTok", icon: "🎵" },
   ];
 
   return (
@@ -33,7 +46,7 @@ const Dashboard = () => {
             <PlatformSwitcher
               platforms={platforms}
               activePlatform={activePlatform}
-              onPlatformChange={setActivePlatform}
+              onPlatformChange={handlePlatformChange}
             />
           </div>
           
