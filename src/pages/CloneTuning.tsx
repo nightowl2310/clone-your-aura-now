@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "@/components/dashboard/Header";
@@ -74,7 +73,7 @@ const CloneTuning = () => {
                       <div className={`w-12 h-12 rounded-2xl flex items-center justify-center text-2xl mb-4 bg-gradient-to-br ${option.color} shadow-md`}>
                         <span>{option.icon}</span>
                       </div>
-                      <h3 className="text-xl font-semibold mb-4">{option.title}</h3>
+                      <h3 className="text-xl font-semibold mb-4 text-white">{option.title}</h3>
                       <ul className="space-y-2 text-muted-foreground">
                         {option.points.map((point, index) => (
                           <li key={index} className="flex items-start">
