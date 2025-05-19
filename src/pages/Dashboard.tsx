@@ -7,7 +7,7 @@ import PlatformSwitcher from "@/components/dashboard/PlatformSwitcher";
 import CommentsChart from "@/components/dashboard/charts/CommentsChart";
 import AIRepliesChart from "@/components/dashboard/charts/AIRepliesChart";
 import SentimentChart from "@/components/dashboard/charts/SentimentChart";
-import ReplyTimeChart from "@/components/dashboard/charts/ReplyTimeChart";
+// import ReplyTimeChart from "@/components/dashboard/charts/ReplyTimeChart";
 import TopPostsChart from "@/components/dashboard/charts/TopPostsChart";
 import AccuracyChart from "@/components/dashboard/charts/AccuracyChart";
 import Notifications from "@/components/dashboard/Notifications";
@@ -62,9 +62,9 @@ const Dashboard = () => {
             <div>
               <Notifications />
             </div>
-            <div>
+            {/* <div>
               <AIRepliesChart />
-            </div>
+            </div> */}
             <div>
               <SentimentChart />
             </div>
