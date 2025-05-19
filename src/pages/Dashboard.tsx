@@ -69,6 +69,9 @@ const Dashboard = () => {
               <SentimentChart />
             </div>
             <div>
+              <ReplyTimeChart />
+            </div>
+            <div>
               <AccuracyChart />
             </div>
             <div className="lg:col-span-2">
