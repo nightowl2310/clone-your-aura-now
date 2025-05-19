@@ -67,12 +67,15 @@ const AIRepliesChart = () => {
             </SelectContent>
           </Select>
         </div>
-        <CardDescription className="text-muted-foreground">
+        <CardDescription className="text-muted-foreground" >
+          <div id="myDiv" className="mydiv">
           Number of comments automatically replied to by your AI
+          </div>
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="h-[250px] mt-4">
+        <div className="h-[250px] mt-4 mydiv" >
+          <div className="mydiv"></div>
           <ChartContainer config={chartConfig}>
             <ResponsiveContainer width="100%" height="100%">
               <LineChart

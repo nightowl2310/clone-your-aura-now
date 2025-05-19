@@ -6,9 +6,9 @@ import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
 // Sample data for the chart
 const sentimentData = [
-  { name: "Positive", value: 67, keywords: ["amazing", "lovely", "great", "awesome", "inspiring", "beautiful"] },
-  { name: "Neutral", value: 23, keywords: ["okay", "cool", "hmm", "noted", "interesting", "seen"] },
-  { name: "Negative", value: 10, keywords: ["boring", "fake", "lame", "ugly", "disappointed", "terrible"] },
+  { name: "", value: 67, keywords: ["amazing", "lovely", "great", "awesome", "inspiring", "beautiful"] },
+  { name: "", value: 23, keywords: ["okay", "cool", "hmm", "noted", "interesting", "seen"] },
+  { name: "", value: 10, keywords: ["boring", "fake", "lame", "ugly", "disappointed", "terrible"] },
 ];
 
 const COLORS = ["#00E3A5", "#7C84FF", "#FF4C60"];
@@ -90,7 +90,9 @@ const SentimentChart = () => {
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-medium text-white">Sentiment Breakdown</CardTitle>
         <CardDescription className="text-muted-foreground">
+          <span className="mydiv">
           AI-detected sentiment in comments on your posts
+          </span>
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -116,6 +118,15 @@ const SentimentChart = () => {
               </PieChart>
             </ResponsiveContainer>
           </ChartContainer>
+        <span className="circlegreen"></span>
+        <span className="mydiv"> Positive </span>
+
+        <span className="circleblue"></span>
+        <span className="mydiv"> Neutral </span>
+
+        <span className="circlered"></span>
+        <span className="mydiv"> Negative </span>
+
         </div>
       </CardContent>
       </div>
