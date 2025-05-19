@@ -107,7 +107,7 @@ const Index = () => {
             <div className="flex items-center mb-4">
               <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] mr-3"></div>
               <div>
-                <p className="font-bold">Tech Burne<p>
+                <p className="font-bold">Tech Burne</p>
                 <p className="text-sm text-gray-400">Original Creator</p>
               </div>
             </div>
