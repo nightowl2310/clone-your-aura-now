@@ -11,7 +11,7 @@ const sentimentData = [
   { name: "Negative", value: 10, keywords: ["boring", "fake", "lame", "ugly", "disappointed", "terrible"] },
 ];
 
-const COLORS = ["#6EE7B7", "#94A3B8", "#FB7185"];
+const COLORS = ["#00E3A5", "#7C84FF", "#FF4C60"];
 
 const chartConfig = {
   Positive: {
