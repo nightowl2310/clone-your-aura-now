@@ -69,7 +69,7 @@ const Notifications = () => {
   };
 
   return (
-    <Card className="bg-[#222222] border-[#333333]">
+    <Card className="bg-[#222222] border-[#cde6f9]">
       <CardHeader className="pb-2">
         <div className="flex justify-between items-center">
           <CardTitle className="text-lg font-medium text-white flex items-center">
@@ -98,7 +98,7 @@ const Notifications = () => {
               key={notification.id}
               className={`flex p-3 rounded-md ${
                 notification.isNew
-                  ? "bg-[#9b87f5]/10 border border-[#9b87f5]/30"
+                  ? "bg-[#9b87f5]/10 border border-[#cde6f9]/30"
                   : "bg-[#333333]/50"
               }`}
             >

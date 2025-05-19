@@ -50,7 +50,7 @@ const AIRepliesChart = () => {
   const [selectedPost, setSelectedPost] = useState("all");
 
   return (
-    <Card className="bg-[#222222] border-[#333333]">
+    <Card className="bg-[#222222] border-[#cde6f9]">
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg font-medium text-white">Replies Sent by AI</CardTitle>

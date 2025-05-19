@@ -42,7 +42,7 @@ const CustomTooltipContent = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     return (
-      <div className="bg-[#333] p-3 rounded-md shadow-lg  border-[#bbb6b6]">
+      <div className="bg-[#333] p-3 rounded-md shadow-lg  border-[#cde6f9]">
         <p className="font-medium">{`${data.name}: ${data.value}%`}</p>
         <div className="mt-1">
           <p className="text-xs text-gray-400">Top Keywords:</p>
@@ -85,7 +85,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 const SentimentChart = () => {
   return (
-  <Card className="bg-[#222222] border-[#bbb6b6]">
+  <Card className="bg-[#222222] border-[#cde6f9]">
     <div className="h-[320px]">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-medium text-white">Sentiment Breakdown</CardTitle>

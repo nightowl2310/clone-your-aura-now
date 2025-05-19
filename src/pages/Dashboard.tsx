@@ -9,7 +9,7 @@ import AIRepliesChart from "@/components/dashboard/charts/AIRepliesChart";
 import SentimentChart from "@/components/dashboard/charts/SentimentChart";
 // import ReplyTimeChart from "@/components/dashboard/charts/ReplyTimeChart;"
 import TopPostsChart from "@/components/dashboard/charts/TopPostsChart";
-import AccuracyChart from "@/components/dashboard/charts/AccuracyChart";
+// import AccuracyChart from "@/components/dashboard/charts/AccuracyChart";
 import Notifications from "@/components/dashboard/Notifications";
 import ActionButtons from "@/components/dashboard/ActionButtons";
 import Assistant from "@/components/dashboard/Assistant";
@@ -71,9 +71,9 @@ const Dashboard = () => {
             {/* <div>
               <ReplyTimeChart />
             </div> */}
-            <div>
+            {/* <div>
               <AccuracyChart />
-            </div>
+            </div> */}
             <div className="lg:col-span-2">
               <TopPostsChart />
             </div>

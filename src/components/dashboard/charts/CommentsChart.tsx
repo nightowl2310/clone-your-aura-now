@@ -80,7 +80,7 @@ const CommentsChart = () => {
   const data = timeframe === "7d" ? commentsData7Days : commentsData30Days;
 
   return (
-    <Card className="bg-[#222222] border-[#333333] overflow-hidden rounded-2xl">
+    <Card className="bg-[#222222] border-[#cde6f9] overflow-hidden rounded-2xl">
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg font-medium text-white">

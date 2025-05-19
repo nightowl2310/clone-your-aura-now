@@ -60,7 +60,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     return (
-      <div className="bg-[#333] p-3 rounded-md shadow-lg border border-[#444]">
+      <div className="bg-[#333] p-3 rounded-md shadow-lg border border-[#cde6f9]">
         <div className="flex items-center gap-3">
           <img src={data.thumbnail} alt={data.name} className="w-10 h-10 rounded" />
           <div>
@@ -81,7 +81,7 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
 
 const TopPostsChart = () => {
   return (
-    <Card className="bg-[#222222] border-[#333333]">
+    <Card className="bg-[#222222] border-[#cde6f9]">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-medium text-white">Top Performing Posts</CardTitle>
         <CardDescription className="text-muted-foreground">
