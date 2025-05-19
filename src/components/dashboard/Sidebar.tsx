@@ -1,8 +1,14 @@
-
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import { BarChartHorizontal, Users, Gift, Settings, LogOut, Bot } from "lucide-react";
+import {
+  BarChartHorizontal,
+  Users,
+  Gift,
+  Settings,
+  LogOut,
+  Bot,
+} from "lucide-react";
 
 interface SidebarItemProps {
   icon: React.ElementType;
@@ -12,9 +18,12 @@ interface SidebarItemProps {
 
 const SidebarItem = ({ icon: Icon, href, label }: SidebarItemProps) => {
   const location = useLocation();
-  const isActive = location.pathname === href || 
-                   (href !== "/" && href !== "/dashboard" && location.pathname.startsWith(href));
-  
+  const isActive =
+    location.pathname === href ||
+    (href !== "/" &&
+      href !== "/dashboard" &&
+      location.pathname.startsWith(href));
+
   return (
     <Link
       to={href}
@@ -35,20 +44,23 @@ const Sidebar = () => {
   return (
     <aside className="hidden md:flex flex-col w-64 p-4 border-r border-border">
       <div className="flex items-center mb-8 px-4">
-        <img src="/lovable-uploads/83b6ed76-491d-4cee-96e2-c8e5f35ed908.png" alt="Fluence AI Logo" className="h-8 w-8 mr-2" />
-<<<<<<< HEAD
-        <span className="text-xl font-bold bg-gradient-to-r from-[#33C3F0] to-[#3B34DC] bg-clip-text text-transparent">
-          Fluence AI
-        </span>
-=======
+        <img
+          src="/lovable-uploads/83b6ed76-491d-4cee-96e2-c8e5f35ed908.png"
+          alt="Fluence AI Logo"
+          className="h-8 w-8 mr-2"
+        />
         <a href="/" className="your-classes">
-        <span className="text-xl font-bold bg-gradient-to-r from-[#33C3F0] to-[#3B34DC] bg-clip-text text-transparent">
-          Fluence AI
-        </span></a>
->>>>>>> fix-login-navigation
+          <span className="text-xl font-bold bg-gradient-to-r from-[#33C3F0] to-[#3B34DC] bg-clip-text text-transparent">
+            Fluence AI
+          </span>
+        </a>
       </div>
       <nav className="space-y-2 flex-1">
-        <SidebarItem icon={BarChartHorizontal} href="/dashboard" label="Dashboard" />
+        <SidebarItem
+          icon={BarChartHorizontal}
+          href="/dashboard"
+          label="Dashboard"
+        />
         <SidebarItem icon={Bot} href="/automations" label="Automations" />
         <SidebarItem icon={Users} href="/contacts" label="Contacts" />
         <SidebarItem icon={Gift} href="/refer" label="Refer & Earn" />
