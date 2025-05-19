@@ -85,7 +85,8 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 const SentimentChart = () => {
   return (
-    <Card className="bg-[#222222] border-[#333333]">
+  <Card className="bg-[#222222] border-[#333333]">
+    <div className="h-[320px]">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-medium text-white">Sentiment Breakdown</CardTitle>
         <CardDescription className="text-muted-foreground">
@@ -103,7 +104,7 @@ const SentimentChart = () => {
                   cy="50%"
                   labelLine={false}
                   label={renderCustomizedLabel}
-                  outerRadius={90}
+                  outerRadius={70}
                   fill="#8884d8"
                   dataKey="value"
                 >
@@ -117,6 +118,7 @@ const SentimentChart = () => {
           </ChartContainer>
         </div>
       </CardContent>
+      </div>
     </Card>
   );
 };
