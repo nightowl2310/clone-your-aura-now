@@ -10,14 +10,7 @@ const ActionButtons = () => {
         <Settings className="h-4 w-4" />
         Train Your AI Clone More
       </Button>
-<Button
-  className="flex items-center gap-2 text-white border border-white/20 bg-[#232323]
-             hover:bg-[#2f2f2f] hover: hover:shadow-lg
-            "
->
-  <Download className="h-4 w-4" />
-  Export Data
-</Button>
+
 
       <Button
         variant="ghost"
