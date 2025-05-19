@@ -7,6 +7,7 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   server: {
     host: "::",
+<<<<<<< HEAD
     port: 8080,
   },
   plugins: [
@@ -14,6 +15,13 @@ export default defineConfig(({ mode }) => ({
     mode === 'development' &&
     componentTagger(),
   ].filter(Boolean),
+=======
+    port: 3000,
+  },
+  plugins: [react(), mode === "development" && componentTagger()].filter(
+    Boolean
+  ),
+>>>>>>> fix-login-navigation
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

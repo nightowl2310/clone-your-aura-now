@@ -10,6 +10,7 @@ const ActionButtons = () => {
         <Settings className="h-4 w-4" />
         Train Your AI Clone More
       </Button>
+<<<<<<< HEAD
       <Button variant="outline" className="flex items-center gap-2 text-white border-white/20">
         <Download className="h-4 w-4" />
         Export Data
@@ -17,6 +18,13 @@ const ActionButtons = () => {
       <Button
         variant="ghost"
         className="flex items-center gap-2 text-muted-foreground hover:text-white"
+=======
+
+
+      <Button
+        variant="ghost"
+        className="flex items-center gap-2 text-muted-foreground hover:"
+>>>>>>> fix-login-navigation
       >
         <RefreshCcw className="h-4 w-4" />
         Refresh Data

@@ -1,8 +1,32 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip } from "recharts";
+=======
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
+import {
+  Line,
+  LineChart,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Tooltip,
+} from "recharts";
+>>>>>>> fix-login-navigation
 
 // Sample data for the chart
 const commentsData7Days = [
@@ -16,7 +40,10 @@ const commentsData7Days = [
 ];
 
 const commentsData30Days = [
+<<<<<<< HEAD
   // First week data
+=======
+>>>>>>> fix-login-navigation
   { day: "1", comments: 42 },
   { day: "2", comments: 63 },
   { day: "3", comments: 58 },
@@ -24,7 +51,10 @@ const commentsData30Days = [
   { day: "5", comments: 56 },
   { day: "6", comments: 82 },
   { day: "7", comments: 91 },
+<<<<<<< HEAD
   // Rest of the month (sample data)
+=======
+>>>>>>> fix-login-navigation
   { day: "8", comments: 67 },
   { day: "9", comments: 52 },
   { day: "10", comments: 48 },
@@ -65,15 +95,30 @@ const CommentsChart = () => {
   const data = timeframe === "7d" ? commentsData7Days : commentsData30Days;
 
   return (
+<<<<<<< HEAD
     <Card className="bg-[#222222] border-[#333333]">
       <CardHeader className="pb-2">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg font-medium text-white">Comments Received Over Time</CardTitle>
+=======
+    <Card className="bg-[#222222] border-[#333333] overflow-hidden rounded-2xl">
+      <CardHeader className="pb-2">
+        <div className="flex items-center justify-between">
+          <CardTitle className="text-lg font-medium text-white">
+            Comments Received Over Time
+          </CardTitle>
+>>>>>>> fix-login-navigation
           <div className="flex items-center gap-1">
             <Button
               variant="ghost"
               size="sm"
+<<<<<<< HEAD
               className={`px-2.5 ${timeframe === "7d" ? "bg-[#9b87f5]/20 text-[#9b87f5]" : ""}`}
+=======
+              className={`px-2.5 ${
+                timeframe === "7d" ? "bg-[#9b87f5]/20 text-[#9b87f5]" : ""
+              }`}
+>>>>>>> fix-login-navigation
               onClick={() => setTimeframe("7d")}
             >
               7 Days
@@ -81,10 +126,19 @@ const CommentsChart = () => {
             <Button
               variant="ghost"
               size="sm"
+<<<<<<< HEAD
               className={`px-2.5 ${timeframe === "30d" ? "bg-[#9b87f5]/20 text-[#9b87f5]" : ""}`}
               onClick={() => setTimeframe("30d")}
             >
               30 Days
+=======
+              className={`px-2.5 ${
+                timeframe === "30d" ? "bg-[#9b87f5]/20 text-[#9b87f5]" : ""
+              }`}
+              onClick={() => setTimeframe("30d")}
+            >
+              <div className="text-white">30 Days</div>
+>>>>>>> fix-login-navigation
             </Button>
           </div>
         </div>
@@ -93,7 +147,11 @@ const CommentsChart = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
+<<<<<<< HEAD
         <div className="h-[250px] mt-4">
+=======
+        <div className="relative w-full h-[250px] mt-4 overflow-hidden">
+>>>>>>> fix-login-navigation
           <ChartContainer config={chartConfig}>
             <ResponsiveContainer width="100%" height="100%">
               <LineChart
@@ -123,7 +181,16 @@ const CommentsChart = () => {
                   stroke="#9b87f5"
                   strokeWidth={3}
                   dot={{ r: 4, fill: "#9b87f5", strokeWidth: 0 }}
+<<<<<<< HEAD
                   activeDot={{ r: 6, fill: "#9b87f5", stroke: "#222222", strokeWidth: 2 }}
+=======
+                  activeDot={{
+                    r: 6,
+                    fill: "#9b87f5",
+                    stroke: "#222222",
+                    strokeWidth: 2,
+                  }}
+>>>>>>> fix-login-navigation
                 />
               </LineChart>
             </ResponsiveContainer>
