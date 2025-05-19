@@ -15,14 +15,14 @@ const COLORS = ["#00E3A5", "#7C84FF", "#FF4C60"];
 
 const chartConfig = {
   Positive: {
-    label: "Positive",
+    label: "",
     theme: {
       light: "#00E3A5",
       dark: "#00E3A5",
     },
   },
   Neutral: {
-    label: "Neutral",
+    label: "",
     theme: {
       light: "#7C84FF",
       dark: "#7C84FF",
@@ -30,7 +30,7 @@ const chartConfig = {
     },
   },
   Negative: {
-    label: "Negative",
+    label: "",
     theme: {
       light: "#FF4C60",
       dark: "#FF4C60",
@@ -42,7 +42,7 @@ const CustomTooltipContent = ({ active, payload }: any) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     return (
-      <div className="bg-[#333] p-3 rounded-md shadow-lg border border-[#444]">
+      <div className="bg-[#333] p-3 rounded-md shadow-lg  border-[#bbb6b6]">
         <p className="font-medium">{`${data.name}: ${data.value}%`}</p>
         <div className="mt-1">
           <p className="text-xs text-gray-400">Top Keywords:</p>
@@ -85,7 +85,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 const SentimentChart = () => {
   return (
-  <Card className="bg-[#222222] border-[#333333]">
+  <Card className="bg-[#222222] border-[#bbb6b6]">
     <div className="h-[320px]">
       <CardHeader className="pb-2">
         <CardTitle className="text-lg font-medium text-white">Sentiment Breakdown</CardTitle>
