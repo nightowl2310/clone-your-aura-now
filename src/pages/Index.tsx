@@ -260,7 +260,6 @@ const Index = () => {
               </Button>
             </CardFooter>
           </Card>
-
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
@@ -274,9 +273,8 @@ const Index = () => {
               </CardTitle>
               <CardFooter>  </CardFooter>
             </CardHeader>
-          </Card>
+          </Card>          
         </div>
-              
         
         
         <div className="w-full md:w-1/2 lg:w-1/3 p-4">
