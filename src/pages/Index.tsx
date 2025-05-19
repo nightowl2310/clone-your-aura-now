@@ -135,6 +135,163 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="container mx-auto py-20">
+        <h2
+          id="features"
+          className="text-3xl md:text-4xl font-bold text-center mb-4"
+        >
+      Key Features
+        </h2>
+        <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
+          Everything you need to scale your creator presence and engage with
+          your audience.
+        </p>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <Card className="bg-[#222222] border-[#333333]">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
+                <MessageSquare className="text-white" />
+              </div>
+              <CardTitle className="text-white">
+                Reply Like a Pro (Without Lifting a Finger)
+              </CardTitle>
+              <CardDescription className="text-gray-400">
+                Let AI handle the replies — you stay in the spotlight.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">
+                Auto-respond to every comment, DM, and story mention (upcoming)
+                — all in your unique voice and style. Whether it's Instagram or
+                YouTube, watch your engagement soar as your audience feels heard
+                and hyped. Creators have seen comments jump from 50 to over 500
+                per post — without typing a word.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#33C3F0] hover:bg-transparent"
+              >
+                Learn more <ArrowRight size={16} className="ml-2" />
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card className="bg-[#222222] border-[#333333]">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#D946EF] flex items-center justify-center mb-4">
+                <Phone className="text-white" />
+              </div>
+              <CardTitle className="text-white">
+                Talk to Fans Without Saying a Word
+              </CardTitle>
+              <CardDescription className="text-gray-400">
+                Your AI twin, your voice — now always available.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">
+                Let your AI clone handle fan calls and voice messages — all in
+                your voice! Surprise your fans with “you” even when you’re off
+                creating. From shoutouts to quick chats, stay connected 24/7
+                without lifting a mic.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+              >
+                Learn more <ArrowRight size={16} className="ml-2" />
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card className="bg-[#222222] border-[#333333]">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#33C3F0] to-[#9b87f5] flex items-center justify-center mb-4">
+                <Film className="text-white" />
+              </div>
+              <CardTitle className="text-white">
+                Boost Engagement on Autopilot 🚀
+              </CardTitle>
+              <CardDescription className="text-gray-400">
+                Let AI turn comments into connections — and fans into followers.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">
+                Automated replies to every comment and message supercharge your
+                engagement. IG’s algorithm loves the action — and rewards you by
+                showing your content to more people. Watch your follower count
+                grow, day by day, while you focus on creating.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+              >
+                Learn more <ArrowRight size={16} className="ml-2" />
+              </Button>
+            </CardFooter>
+          </Card>
+          <Card className="bg-[#222222] border-[#333333]">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#D946EF] to-[#33C3F0] flex items-center justify-center mb-4">
+                <Shield className="text-white" />
+              </div>
+              <CardTitle className="text-white">Safe & Moderated</CardTitle>
+              <CardDescription className="text-gray-400">
+                Always-On AI Protection
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-300">
+                Advanced moderation ensures your AI clone always stays on brand
+                and responds appropriately.
+              </p>
+            </CardContent>
+            <CardFooter>
+              <Button
+                variant="ghost"
+                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+              >
+                Learn more <ArrowRight size={16} className="ml-2" />
+              </Button>
+            </CardFooter>
+          </Card>
+
+          <Card className="bg-[#222222] border-[#333333]">
+            <CardHeader>
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
+                <MessageSquare className="text-white" />
+              </div>
+              <CardTitle >
+                
+              </CardTitle>
+              <CardTitle className="text-white">
+                Smart replies handle FAQs instantly
+              </CardTitle>
+              <CardFooter>  </CardFooter>
+            </CardHeader>
+          </Card>
+        </div>
+              
+        
+        
+        <div className="w-full md:w-1/2 lg:w-1/3 p-4">
+  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300">
+    <h3 className="text-white text-lg font-semibold mb-2">
+      Smart replies handle <span className="text-[#9b87f5]">FAQs</span> instantly
+    </h3>
+    <p className="text-gray-300 text-sm">
+      Let the AI assist with common questions, reducing your manual workload.
+    </p>
+  </div>
+</div>
+
+      </section>
+
       {/* Product Overview */}
       <section className="bg-[#222222] py-20">
         <div className="container mx-auto">
@@ -273,134 +430,7 @@ const Index = () => {
       </section>
 
       {/* Features */}
-      <section className="container mx-auto py-20">
-        <h2
-          id="features"
-          className="text-3xl md:text-4xl font-bold text-center mb-4"
-        >
-          Key Features
-        </h2>
-        <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
-          Everything you need to scale your creator presence and engage with
-          your audience.
-        </p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="bg-[#222222] border-[#333333]">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
-                <MessageSquare className="text-white" />
-              </div>
-              <CardTitle className="text-white">
-                Reply Like a Pro (Without Lifting a Finger)
-              </CardTitle>
-              <CardDescription className="text-gray-400">
-                Let AI handle the replies — you stay in the spotlight.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-300">
-                Auto-respond to every comment, DM, and story mention (upcoming)
-                — all in your unique voice and style. Whether it's Instagram or
-                YouTube, watch your engagement soar as your audience feels heard
-                and hyped. Creators have seen comments jump from 50 to over 500
-                per post — without typing a word.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button
-                variant="ghost"
-                className="text-[#9b87f5] p-0 hover:text-[#33C3F0] hover:bg-transparent"
-              >
-                Learn more <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card className="bg-[#222222] border-[#333333]">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#D946EF] flex items-center justify-center mb-4">
-                <Phone className="text-white" />
-              </div>
-              <CardTitle className="text-white">
-                Talk to Fans Without Saying a Word
-              </CardTitle>
-              <CardDescription className="text-gray-400">
-                Your AI twin, your voice — now always available.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-300">
-                Let your AI clone handle fan calls and voice messages — all in
-                your voice! Surprise your fans with “you” even when you’re off
-                creating. From shoutouts to quick chats, stay connected 24/7
-                without lifting a mic.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button
-                variant="ghost"
-                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
-              >
-                Learn more <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card className="bg-[#222222] border-[#333333]">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#33C3F0] to-[#9b87f5] flex items-center justify-center mb-4">
-                <Film className="text-white" />
-              </div>
-              <CardTitle className="text-white">
-                Boost Engagement on Autopilot 🚀
-              </CardTitle>
-              <CardDescription className="text-gray-400">
-                Let AI turn comments into connections — and fans into followers.
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-300">
-                Automated replies to every comment and message supercharge your
-                engagement. IG’s algorithm loves the action — and rewards you by
-                showing your content to more people. Watch your follower count
-                grow, day by day, while you focus on creating.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button
-                variant="ghost"
-                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
-              >
-                Learn more <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </CardFooter>
-          </Card>
-          <Card className="bg-[#222222] border-[#333333]">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#D946EF] to-[#33C3F0] flex items-center justify-center mb-4">
-                <Shield className="text-white" />
-              </div>
-              <CardTitle className="text-white">Safe & Moderated</CardTitle>
-              <CardDescription className="text-gray-400">
-                Always-On AI Protection
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-300">
-                Advanced moderation ensures your AI clone always stays on brand
-                and responds appropriately.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button
-                variant="ghost"
-                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
-              >
-                Learn more <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </CardFooter>
-          </Card>
-        </div>
-              
-      </section>
+      
 
       {/* Testimonials */}
       <section className="bg-[#222222] py-20">
