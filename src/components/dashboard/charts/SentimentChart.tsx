@@ -6,9 +6,9 @@ import { Cell, Pie, PieChart, ResponsiveContainer, Tooltip } from "recharts";
 
 // Sample data for the chart
 const sentimentData = [
-  { name: "Positive", value: 67, keywords: ["amazing", "love", "great", "awesome"] },
-  { name: "Neutral", value: 23, keywords: ["okay", "fine", "alright", "decent"] },
-  { name: "Negative", value: 10, keywords: ["dislike", "issue", "problem", "disappointed"] },
+  { name: "Positive", value: 67, keywords: ["amazing", "lovely", "great", "awesome", "inspiring", "beautiful"] },
+  { name: "Neutral", value: 23, keywords: ["okay", "cool", "hmm", "noted", "interesting", "seen"] },
+  { name: "Negative", value: 10, keywords: ["boring", "fake", "lame", "ugly", "disappointed", "terrible"] },
 ];
 
 const COLORS = ["#6EE7B7", "#94A3B8", "#FB7185"];
@@ -17,22 +17,22 @@ const chartConfig = {
   Positive: {
     label: "Positive",
     theme: {
-      light: "#6EE7B7",
-      dark: "#6EE7B7",
+      light: "#00E3A5",
+      dark: "#00E3A5",
     },
   },
   Neutral: {
     label: "Neutral",
     theme: {
-      light: "#94A3B8",
-      dark: "#94A3B8",
+      light: "#7C84FF",
+      dark: "#7C84FF",
     },
   },
   Negative: {
     label: "Negative",
     theme: {
-      light: "#FB7185",
-      dark: "#FB7185",
+      light: "#FF4C60",
+      dark: "#FF4C60",
     },
   },
 };
