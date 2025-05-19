@@ -18,6 +18,8 @@ import NotFound from "./pages/NotFound";
 import React from "react";
 import CreateAutomations from "./pages/CreateAutomations";
 import Login from "./pages/Login";
+import './App.css';
+
 
 const queryClient = new QueryClient();
 

@@ -139,7 +139,7 @@ const Index = () => {
       <section className="bg-[#222222] py-20">
         <div className="container mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-            How CreatorClone Works
+            How FluenceAI Works
           </h2>
           <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
             Your AI clone learns your voice, style, and knowledge to engage with
@@ -413,7 +413,7 @@ const Index = () => {
           </h2>
           <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
             See how other creators are scaling their engagement with
-            CreatorClone.ai.
+            FluenceAI
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -886,7 +886,7 @@ const Index = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
               <h3 className="text-xl font-bold mb-4 text-white">
-                CreatorClone.ai
+                FluenceAI
               </h3>
               <p className="text-gray-400 mb-4">
                 Scale your creator presence with AI that sounds just like you.
@@ -1004,7 +1004,7 @@ const Index = () => {
           </div>
           <div className="border-t border-[#333333] pt-8">
             <p className="text-center text-gray-400">
-              © {new Date().getFullYear()} CreatorClone.ai. All rights reserved.
+              © {new Date().getFullYear()} FluenceAI All rights reserved.
             </p>
           </div>
         </div>

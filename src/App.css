@@ -10,6 +10,14 @@ body {
   padding: 0;
 }
 
+/* App.css */
+.myDiv {
+  color: #A6A6A6;
+  align-content: left;
+  /* background-color: #1A1F2C; */
+}
+
+
 .container {
   width: 100%;
   padding-right: 1rem;

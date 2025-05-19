@@ -109,8 +109,9 @@ const CommentsChart = () => {
             </Button>
           </div>
         </div>
-        <CardDescription className="text-muted-foreground">
-          Total comments received on your Instagram posts
+        
+          <CardDescription className="text-muted-foreground">
+          <div className="myDiv">Total comments received on your Instagram posts</div>
         </CardDescription>
       </CardHeader>
       <CardContent>
