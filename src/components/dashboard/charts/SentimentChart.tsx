@@ -26,6 +26,7 @@ const chartConfig = {
     theme: {
       light: "#7C84FF",
       dark: "#7C84FF",
+      fontsize: "10px",
     },
   },
   Negative: {
