@@ -12,25 +12,19 @@ const Automations = () => {
     {
       name: "Instagram Auto-Reply",
       type: "Comment Reply",
-      
       status: "Active",
-      lastPublished: "2 days ago",
       live: true,
     },
     {
       name: "Story Response",
       type: "Story Reply",
-      
       status: "Active",
-      lastPublished: "5 days ago",
       live: true,
     },
     {
       name: "DM Assistant",
       type: "Direct Message",
-      
       status: "Inactive",
-      lastPublished: "2 weeks ago",
       live: false,
     },
   ]);
@@ -43,7 +37,7 @@ const Automations = () => {
 
   return (
     <div className="min-h-screen flex bg-[#121212] text-white">
-      {/* Sidebar hidden on small screens */}
+      {/* Sidebar */}
       <Sidebar />
 
       <main className="flex-1 overflow-y-auto">
@@ -84,95 +78,101 @@ const Automations = () => {
               </select>
             </div>
 
+            {/* Table layout for desktop */}
             <div className="overflow-x-auto">
-  <table className="min-w-full border-collapse hidden md:table">
-    <thead>
-      <tr className="border-b border-border text-left">
-        <th className="pb-3 pl-4">Automation</th>
-        <th className="pb-3">Type</th>
-        <th className="pb-3">Status</th>
-        <th className="pb-3">Last Published</th>
-        <th className="pb-3 pr-4">Live</th>
-      </tr>
-    </thead>
-    <tbody>
-      {automations.map((automation, index) => (
-        <tr
-          key={index}
-          className="border-b border-border hover:bg-[#1A1F2C] transition-colors"
-        >
-          <td className="py-4 pl-4">{automation.name}</td>
-          <td className="py-4">{automation.type}</td>
-          <td className="py-4">
-            <span
-              className={`inline-block w-2 h-2 rounded-full mr-2 ${
-                automation.status === "Active"
-                  ? "bg-green-500"
-                  : "bg-red-500"
-              }`}
-            ></span>
-            {automation.status}
-          </td>
-          <td className="py-4 pr-4">
-            <div
-              className={`w-12 h-6 rounded-full ${
-                automation.live ? "bg-[#9b87f5]" : "bg-gray-600"
-              } relative cursor-pointer`}
-              onClick={() => toggleLiveStatus(index)}
-            >
-              <div
-                className={`absolute h-4 w-4 rounded-full bg-white top-1 transition-all ${
-                  automation.live ? "right-1" : "left-1"
-                }`}
-              />
+              <table className="min-w-full border-collapse hidden md:table">
+                <thead>
+  <tr className="border-b border-border">
+    <th className="pb-3 pl-4 text-center">Automation</th>
+    <th className="pb-3 text-center">Type</th>
+    <th className="pb-3 text-center">Status</th>
+    <th className="pb-3 pr-4 text-center">Live</th>
+  </tr>
+</thead>
+                <tbody>
+                  {automations.map((automation, index) => (
+                    <tr
+                      key={index}
+                      className="border-b border-border hover:bg-[#1A1F2C] transition-colors"
+                    >
+                      <td className="py-4 pl-4">{automation.name}</td>
+                      <td className="py-4">{automation.type}</td>
+                      <td className="py-4">
+                        <span
+                          className={`inline-block w-2 h-2 rounded-full mr-2 ${
+                            automation.status === "Active"
+                              ? "bg-green-500"
+                              : "bg-red-500"
+                          }`}
+                        ></span>
+                        {automation.status}
+                      </td>
+                      <td className="py-4 pr-4">
+                        <div
+                          className={`w-12 h-6 rounded-full ${
+                            automation.live ? "bg-[#9b87f5]" : "bg-gray-600"
+                          } relative cursor-pointer`}
+                          onClick={() => toggleLiveStatus(index)}
+                        >
+                          <div
+                            className={`absolute h-4 w-4 rounded-full bg-white top-1 transition-all ${
+                              automation.live ? "right-1" : "left-1"
+                            }`}
+                          />
+                        </div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+
+              {/* Card layout for mobile */}
+              <div className="space-y-4 md:hidden">
+                {automations.map((automation, index) => (
+                  <div
+                    key={index}
+                    className="bg-[#1A1F2C] rounded-lg p-4 shadow border border-border"
+                  >
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="font-semibold text-white">
+                        {automation.name}
+                      </h3>
+                      <div
+                        className={`w-10 h-5 rounded-full ${
+                          automation.live ? "bg-[#9b87f5]" : "bg-gray-600"
+                        } relative cursor-pointer`}
+                        onClick={() => toggleLiveStatus(index)}
+                      >
+                        <div
+                          className={`absolute h-4 w-4 rounded-full bg-white top-0.5 transition-all ${
+                            automation.live ? "right-1" : "left-1"
+                          }`}
+                        />
+                      </div>
+                    </div>
+                    <div className="text-sm text-muted-foreground">
+                      <div>
+                        <span className="font-medium text-white">Type:</span>{" "}
+                        {automation.type}
+                      </div>
+                      <div className="flex items-center">
+                        <span className="font-medium text-white mr-1">
+                          Status:
+                        </span>
+                        <span
+                          className={`w-2 h-2 rounded-full mr-2 ${
+                            automation.status === "Active"
+                              ? "bg-green-500"
+                              : "bg-red-500"
+                          }`}
+                        />
+                        {automation.status}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
-          </td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-
-  {/* Mobile layout */}
-  <div className="space-y-4 md:hidden">
-    {automations.map((automation, index) => (
-      <div
-        key={index}
-        className="bg-[#1A1F2C] rounded-lg p-4 shadow border border-border"
-      >
-        <div className="flex justify-between items-center mb-2">
-          <h3 className="font-semibold text-white">{automation.name}</h3>
-          <div
-            className={`w-10 h-5 rounded-full ${
-              automation.live ? "bg-[#9b87f5]" : "bg-gray-600"
-            } relative cursor-pointer`}
-            onClick={() => toggleLiveStatus(index)}
-          >
-            <div
-              className={`absolute h-4 w-4 rounded-full bg-white top-0.5 transition-all ${
-                automation.live ? "right-1" : "left-1"
-              }`}
-            />
-          </div>
-        </div>
-        <div className="text-sm text-muted-foreground">
-          <div><span className="font-medium text-white">Type:</span> {automation.type}</div>
-          <div className="flex items-center">
-            <span className="font-medium text-white mr-1">Status:</span>
-            <span
-              className={`w-2 h-2 rounded-full mr-2 ${
-                automation.status === "Active" ? "bg-green-500" : "bg-red-500"
-              }`}
-            />
-            {automation.status}
-          </div>
-          <div><span className="font-medium text-white">Last Published:</span> {automation.lastPublished}</div>
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-
-
           </div>
         </div>
       </main>
