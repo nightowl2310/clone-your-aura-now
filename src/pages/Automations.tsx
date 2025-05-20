@@ -103,7 +103,6 @@ const Automations = () => {
         >
           <td className="py-4 pl-4">{automation.name}</td>
           <td className="py-4">{automation.type}</td>
-          <td className="py-4">{automation.runs}</td>
           <td className="py-4">
             <span
               className={`inline-block w-2 h-2 rounded-full mr-2 ${
