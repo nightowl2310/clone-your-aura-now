@@ -10,7 +10,7 @@ const Assistant = () => {
   
   const tips = [
     "You can customize your AI's tone in Settings → Voice Style",
-    "Share links to your AI profile to let fans interact with your clone",
+    "Share links to your AI profile to let Followers interact with your clone",
     "Upload your past content to improve your AI's knowledge base",
     "Use your AI clone to respond to repetitive questions on your behalf"
   ];

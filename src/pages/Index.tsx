@@ -12,6 +12,7 @@ import { MessageSquare, Phone, Film, Shield, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../lib/config";
 import websiteImage from '../assets/website_image_1.png';
+import websiteImag from '../assets/agi1.png';
 
 
 
@@ -133,9 +134,37 @@ const Index = () => {
           </div>
         </div>
       </section>
+    
+    <section className="">
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <span className="md:w-1/2 mb-10 md:mb-0">
+                <h1
+                  className="text-6xl md:text-6xl font-bold mb-6 leading-tight bg-clip-text text-transparent"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(to right,  #33C3F0, #9b87f5)",
+                  }}
+                >
+                  Over 2.4K+ Accounts Engaged
+                </h1>
+              </span>
+
+              <span className="md:w-1/2 flex justify-center">
+                <img
+                  src={websiteImag}
+                  alt="Website preview"
+                  className="w-full max-w-md h-auto object-contain"
+                />
+              </span>
+            </div>
+
+
+
+    </section>
+
 
       {/* Features */}
-      <section className="container mx-auto py-20">
+<section className="container mx-auto py-20">
         <h2
           id="features"
           className="text-3xl md:text-4xl font-bold text-center mb-4"
@@ -147,39 +176,85 @@ const Index = () => {
           your audience.
         </p>
 
-<div className="w-full md:w-1/2 lg:w-1/3 p-4">
-         
-<div className="flex flex-wrap justify-center gap-6 px-4">
-  {/* Card 1 */}
-  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300 w-[300px]">
-    <h3 className="text-white text-lg font-semibold mb-2">
-      Auto-reply to <span className="text-[#9b87f5]">Comments</span> instantly
-    </h3>
-    <p className="text-gray-300 text-sm"></p>
+ <div className="w-full md:w-1/2 lg:w-full px-4">
+    <div className="flex flex-wrap justify-center gap-8">
+      {/* Card 1 */}
+      <div className="transition-all duration-300 transform hover:scale-110 hover:z-10">
+        <Card className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] w-[300px]">
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Auto-reply to <span className="text-[#9b87f5]">Comments</span> instantly
+          </h3>
+        </Card>
+      </div>
+
+      {/* Card 2 */}
+      <div className="transition-all duration-300 transform hover:scale-110 hover:z-10">
+        <Card className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] w-[300px]">
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Put Instagram growth on <span className="text-[#9b87f5]">autopilot</span>
+          </h3>
+        </Card>
+      </div>
+
+      {/* Card 3 */}
+      <div className="transition-all duration-300 transform hover:scale-110 hover:z-10">
+        <Card className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] w-[300px]">
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Smart DM replies for your <span className="text-[#9b87f5]">Customers</span>
+          </h3>
+        </Card>
+      </div>
+
+      {/* Card 4 */}
+      <div className="transition-all duration-300 transform hover:scale-110 hover:z-10">
+        <Card className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] w-[300px]">
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Designed for Creators Who <span className="text-[#9b87f5]">Sell Digitally</span>
+          </h3>
+        </Card>
+      </div>
+
+      {/* Card 5 */}
+      <div className="transition-all duration-300 transform hover:scale-110 hover:z-10">
+        <Card className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] w-[300px]">
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Your <span className="text-[#9b87f5]">Content Trains the AI</span> — No Extra Work 
+          </h3>
+        </Card>
+      </div>
+
+      {/* Card 6 */}
+      <div className="transition-all duration-300 transform hover:scale-110 hover:z-10">
+        <Card className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] w-[300px]">
+          <h3 className="text-white text-lg font-semibold mb-2">
+            Boost <span className="text-[#9b87f5]">Trust</span> With Instant Replies 
+          </h3>
+        </Card>
+      </div>
+    </div>
   </div>
 
-  {/* Card 2 */}
-  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300 w-[300px]">
-    <h3 className="text-white text-lg font-semibold mb-2">
-      Put Instagram growth on <span className="text-[#9b87f5]">autopilot</span>
-    </h3>
-    <p className="text-gray-300 text-sm"></p>
-  </div>
+      
+      
+      </section>
 
-  {/* Card 3 */}
-  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300 w-[300px]">
-    <h3 className="text-white text-lg font-semibold mb-2">
-      Smart DM replies for your <span className="text-[#9b87f5]">Customers</span>
-    </h3>
-    <p className="text-gray-300 text-sm"></p>
-  </div>
-</div>
-          
-</div>
+      <section>     {/* image */}
 
+      <div className="w-full">
+        <img
+          src={websiteImage}
+          alt="Website preview"
+          className="w-full h-auto object-contain"
+        />
+      </div>
 
- {/* second part         */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      </section>
+      
+{/* the four cards       */}
+      <section>
+        <br></br><br></br><br></br>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 ">
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
@@ -212,7 +287,7 @@ const Index = () => {
                 <Phone className="text-white" />
               </div>
               <CardTitle className="text-white">
-                Talk to Fans Without Saying a Word
+                Talk to Followers Without Saying a Word
               </CardTitle>
               <CardDescription className="text-gray-400">
                 {/* Your AI twin, your voice — now always available. */}
@@ -241,7 +316,7 @@ const Index = () => {
                 Boost Engagement on Autopilot 🚀
               </CardTitle>
               <CardDescription className="text-gray-400">
-                {/* Let AI turn comments into connections — and fans into followers. */}
+                {/* Let AI turn comments into connections — and Followers into followers. */}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -283,21 +358,11 @@ const Index = () => {
             </CardFooter>
           </Card>
 
+          
+
         </div>
-      
+        <br></br><br></br><br></br>
       </section>
-
-      <section>     {/* image */}
-
-      <div className="w-full">
-        <img
-          src={websiteImage}
-          alt="Website preview"
-          className="w-full h-auto object-contain"
-        />
-      </div>
-      </section>
-
       {/* Product Overview */}
       
       <section className="bg-[#222222] py-20">
@@ -357,8 +422,8 @@ const Index = () => {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="order-2 md:order-1 md:w-1/2 bg-[#1A1F2C] rounded-lg p-6 shadow-lg">
-              <div className="bg-[#222222] rounded-lg p-4 mb-4">
+            <div className="order-2 md:order-1 md:w-1/2 bg-[#222222] rounded-lg p-6 ">
+              <div className="bg-[#1A1F2C] rounded-lg p-4 mb-4 shadow-lg" >
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] mr-2"></div>
                   <p>Your AI Clone</p>
@@ -405,7 +470,7 @@ const Index = () => {
                   <div>
                     <p className="font-semibold">YouTube Comments</p>
                     <p className="text-sm text-gray-400">
-                      Reply to thousands of fans automatically
+                      Reply to thousands of Followers automatically
                     </p>
                   </div>
                 </div>
@@ -416,7 +481,7 @@ const Index = () => {
                   <div>
                     <p className="font-semibold">Instagram & Twitter DMs</p>
                     <p className="text-sm text-gray-400">
-                      Never miss a message from fans
+                      Never miss a message from Followers
                     </p>
                   </div>
                 </div>
@@ -508,7 +573,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-br from-[#1A1F2C] to-[#000000e6] p-1 rounded-lg">
+            {/* <div className="bg-gradient-to-br from-[#1A1F2C] to-[#000000e6] p-1 rounded-lg">
               <div className="bg-[#1A1F2C] rounded-lg p-6 h-full">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
@@ -542,7 +607,7 @@ const Index = () => {
                   </svg>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
