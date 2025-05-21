@@ -45,7 +45,7 @@ const Header = ({ onMenuClick }: HeaderProps) => {
               <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#3B34DC] to-[#33C3F0] flex items-center justify-center text-white">
                 A
               </div>
-              <span className="hidden md:inline">y_covers</span>
+              <span className="hidden md:inline">Alex</span>
               <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>

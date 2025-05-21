@@ -11,11 +11,11 @@ import {
 import { MessageSquare, Phone, Film, Shield, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../lib/config";
-import websiteImage from '../assets/website_image_1.png';
-import websiteImag from '../assets/agi1.png';
-import websiteIma from '../assets/agi1.png';
-import websiteIm from '../assets/gdgoc hd logo squared.jpg';
-import websiteI from "..//assets/y_covers.jpg";
+import fluenceailogo from "../assets/logo_fluenceai.png" ;
+import website_image_1 from '../assets/website_image_1.png';
+import agi1 from '../assets/agi1.png';
+import gdgoc from '../assets/gdgoc hd logo squared.jpg';
+import y_covers from '..//assets/y_covers.jpg';
 
 
 
@@ -30,9 +30,9 @@ const Index = () => {
       {/* Navigation */}
       <nav className="container mx-auto py-6 flex justify-between items-center">
         {" "}
-        <div className="flex items-center">
+        <div className="">
           <img
-            src=""
+            src={fluenceailogo}
             alt="Fluence AI Logo"
             className="h-8 w-8 mr-2"
           />
@@ -111,19 +111,19 @@ const Index = () => {
             <div className="flex items-center mb-6">
               <div className="w-10 h-10 rounded-full mr-4">
                 <img
-                  src={websiteImag}
+                  src={y_covers}
                   alt="Website preview"
                   className="w-full h-full object-cover rounded-full"
                 />
               </div>
               <div>
-                <p className="font-bold">Tech Burner</p>
+                <p className="font-bold">y_covers</p>
                 <p className="text-sm text-gray-400">Original Creator</p>
               </div>
             </div>
             <div className="mb-4 ">
-              <p className="text-sm text-gray-300 text-center padding">Replying to @fan_username</p>
-              <p>
+              <p className="text-sm text-gray-300 text-left padding">Replying to @fan_username</p>
+              <p className="text-left">
                 Thanks for watching my latest video! The camera setup details
                 are in the description. Let me know if you have other questions!
               </p>
@@ -131,7 +131,7 @@ const Index = () => {
             <div className="flex items-center text-gray-400 text-sm">
               <div className="flex items-center mr-4">
                 <span className="bg-[#9b87f5] px-2 py-1 rounded text-xs mr-2">
-                  AI
+                  ...
                 </span>
                 <span>2m ago</span>
               </div>
@@ -161,7 +161,7 @@ const Index = () => {
 
               <span className="md:w-1/2 flex justify-center">
                 <img
-                  src={websiteImag}
+                  src={agi1}
                   alt="Website preview"
                   className="w-full max-w-md h-auto object-contain"
                 />
@@ -252,7 +252,7 @@ const Index = () => {
 
       <div className="w-full">
         <img
-          src={websiteImage}
+          src={website_image_1}
           alt="Website preview"
           className="w-full h-auto object-contain"
         />
@@ -437,7 +437,7 @@ const Index = () => {
                 <div className="flex items-center">
                   <div className="w-8 h-8 rounded-full">
                     <img
-                      src={websiteIma}
+                      src={agi1}
                       alt="Website preview"
                       className="w-full h-auto object-cover rounded-full"
                     />
@@ -542,7 +542,7 @@ const Index = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#333333] mr-4">
                     <img
-                      src={websiteI}
+                      src={y_covers}
                       alt="Website preview"
                       className="w-full h-full object-cover rounded-full"
                     />
@@ -574,7 +574,7 @@ const Index = () => {
                 <div className="flex items-center mb-4" >
                   <div className="w-12 h-12 rounded-full bg-[#333333] mb-1">
                     <img
-                        src={websiteIm}
+                        src={gdgoc}
                         alt="Website preview"
                         className="w-full h-full object-cover rounded-full"
                       />
