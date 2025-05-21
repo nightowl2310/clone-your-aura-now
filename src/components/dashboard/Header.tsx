@@ -16,7 +16,7 @@ const Header = () => {
     <header className="flex justify-between items-center py-4">
       <div>
         <h1 className="text-2xl font-bold">
-          Welcome, Aryan{" "}
+          Welcome, y_covers{" "}
           <span role="img" aria-label="wave">
             👋
           </span>
@@ -39,7 +39,7 @@ const Header = () => {
               <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#3B34DC] to-[#33C3F0] flex items-center justify-center text-white">
                 A
               </div>
-              <span className="hidden md:inline">Aryan</span>
+              <span className="hidden md:inline">y_covers</span>
               <ChevronDown className="h-4 w-4" />
             </Button>
           </DropdownMenuTrigger>

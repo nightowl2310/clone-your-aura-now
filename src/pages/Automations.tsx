@@ -86,7 +86,7 @@ const Automations = () => {
     <th className="pb-3 pl-4 text-center">Automation</th>
     <th className="pb-3 text-center">Type</th>
     <th className="pb-3 text-center">Status</th>
-    <th className="pb-3 pr-4 text-center">Live</th>
+   
   </tr>
 </thead>
                 <tbody>

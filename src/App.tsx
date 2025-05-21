@@ -11,7 +11,7 @@ import CloneTuning from "./pages/CloneTuning";
 import TunePostComments from "./pages/TunePostComments";
 import TuneStoryReplies from "./pages/TuneStoryReplies";
 //import TuneDMReplies from "./pages/TuneDMReplies";
-import Contacts from "./pages/Contacts";
+// import Contacts from "./pages/Contacts";
 import Refer from "./pages/Refer";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
@@ -39,7 +39,7 @@ const App = () => (
             <Route path="/tune-post-comments" element={<TunePostComments />} />
             <Route path="/tune-story-replies" element={<TuneStoryReplies />} />
             {/* <Route path="/tune-dm-replies" element={<TuneDMReplies />} /> */}
-            <Route path="/contacts" element={<Contacts />} />
+            {/* <Route path="/contacts" element={<Contacts />} /> */}
             <Route path="/refer" element={<Refer />} />
             <Route path="/settings" element={<Settings />} />{" "}
             <Route path="/clone-tuning" element={<CloneTuning />} />

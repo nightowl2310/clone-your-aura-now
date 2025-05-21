@@ -101,7 +101,7 @@ const Index = () => {
         <div className="md:w-1/2 relative">
           <div className="bg-[#222222] rounded-lg p-6 shadow-[0_0_30px_rgba(155,135,245,0.3)]">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] mr-3"></div>
+              <div className="w-10 h-10 rounded-full bg-gradient-to-r "></div>
               <div>
                 <p className="font-bold">Tech Burner</p>
                 <p className="text-sm text-gray-400">Original Creator</p>
@@ -446,7 +446,7 @@ const Index = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
                   <div>
-                    <p className="font-bold">@CodeWithAryan</p>
+                    <p className="font-bold">@CodeWithy_covers</p>
                     <p className="text-sm text-gray-400">100K Subscribers</p>
                   </div>
                 </div>

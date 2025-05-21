@@ -62,8 +62,8 @@ const Sidebar = () => {
           label="Dashboard"
         />
         <SidebarItem icon={Bot} href="/automations" label="Automations" />
-        <SidebarItem icon={Users} href="/contacts" label="Contacts" />
-        <SidebarItem icon={Gift} href="/refer" label="Refer & Earn" />
+        {/* <SidebarItem icon={Users} href="/contacts" label="Contacts" /> */}
+        {/* <SidebarItem icon={Gift} href="/refer" label="Refer & Earn" /> */}
         <SidebarItem icon={Settings} href="/settings" label="Settings" />
       </nav>
       <div className="mt-auto">
