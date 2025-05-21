@@ -131,17 +131,51 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Features */}
       <section className="container mx-auto py-20">
         <h2
           id="features"
           className="text-3xl md:text-4xl font-bold text-center mb-4"
         >
-      Key Features
+      Features
         </h2>
         <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
           Everything you need to scale your creator presence and engage with
           your audience.
         </p>
+
+<div className="w-full md:w-1/2 lg:w-1/3 p-4">
+         
+<div className="flex flex-wrap justify-center gap-6 px-4">
+  {/* Card 1 */}
+  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300 w-[300px]">
+    <h3 className="text-white text-lg font-semibold mb-2">
+      Auto-reply to <span className="text-[#9b87f5]">Comments</span> instantly
+    </h3>
+    <p className="text-gray-300 text-sm"></p>
+  </div>
+
+  {/* Card 2 */}
+  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300 w-[300px]">
+    <h3 className="text-white text-lg font-semibold mb-2">
+      Put Instagram growth on <span className="text-[#9b87f5]">autopilot</span>
+    </h3>
+    <p className="text-gray-300 text-sm"></p>
+  </div>
+
+  {/* Card 3 */}
+  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300 w-[300px]">
+    <h3 className="text-white text-lg font-semibold mb-2">
+      Smart DM replies for your <span className="text-[#9b87f5]">Customers</span>
+    </h3>
+    <p className="text-gray-300 text-sm"></p>
+  </div>
+</div>
+          
+</div>
+
+
+ {/* second part         */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
@@ -152,16 +186,12 @@ const Index = () => {
                 Reply Like a Pro (Without Lifting a Finger)
               </CardTitle>
               <CardDescription className="text-gray-400">
-                Let AI handle the replies — you stay in the spotlight.
+                {/* Let AI handle the replies — you stay in the spotlight. */}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">
-                Auto-respond to every comment, DM, and story mention (upcoming)
-                — all in your unique voice and style. Whether it's Instagram or
-                YouTube, watch your engagement soar as your audience feels heard
-                and hyped. Creators have seen comments jump from 50 to over 500
-                per post — without typing a word.
+              <p className="text-gray-400" justify-content="jus">
+                Automatically respond to every Comment & DM with your brand’s tone and voice. Whether you're launching products or promoting services, let FluenceAI handle engagement — turning passive followers into active buyers while you focus on building your business.
               </p>
             </CardContent>
             <CardFooter>
@@ -182,15 +212,12 @@ const Index = () => {
                 Talk to Fans Without Saying a Word
               </CardTitle>
               <CardDescription className="text-gray-400">
-                Your AI twin, your voice — now always available.
+                {/* Your AI twin, your voice — now always available. */}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">
-                Let your AI clone handle fan calls and voice messages — all in
-                your voice! Surprise your fans with “you” even when you’re off
-                creating. From shoutouts to quick chats, stay connected 24/7
-                without lifting a mic.
+              <p className="text-gray-400">
+                Let your AI twin manage voice messages and fan calls using your actual voice. Perfect for creators selling products or services — your AI stays live 24/7, nurturing leads, handling FAQs, and making every fan feel heard, even when you're offline or busy scaling your brand.
               </p>
             </CardContent>
             <CardFooter>
@@ -211,15 +238,12 @@ const Index = () => {
                 Boost Engagement on Autopilot 🚀
               </CardTitle>
               <CardDescription className="text-gray-400">
-                Let AI turn comments into connections — and fans into followers.
+                {/* Let AI turn comments into connections — and fans into followers. */}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">
-                Automated replies to every comment and message supercharge your
-                engagement. IG’s algorithm loves the action — and rewards you by
-                showing your content to more people. Watch your follower count
-                grow, day by day, while you focus on creating.
+              <p className="text-gray-400">
+                More engagement = more visibility = more sales. Our AI smartly replies to every comment and message, keeping your account buzzing with activity. Instagram’s algorithm rewards that — which means more eyes on your offers and faster growth for your online business.
               </p>
             </CardContent>
             <CardFooter>
@@ -236,15 +260,14 @@ const Index = () => {
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#D946EF] to-[#33C3F0] flex items-center justify-center mb-4">
                 <Shield className="text-white" />
               </div>
-              <CardTitle className="text-white">Safe & Moderated</CardTitle>
+              <CardTitle className="text-white">Safe & Moderated: Always in control</CardTitle>
               <CardDescription className="text-gray-400">
-                Always-On AI Protection
+                {/* Always-On AI Protection */}
               </CardDescription>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-300">
-                Advanced moderation ensures your AI clone always stays on brand
-                and responds appropriately.
+              <p className="text-gray-400">
+                Your brand’s reputation matters. FluenceAI ensures all responses are on-brand, professional, and audience-appropriate — Whether you're selling digital products, courses, or services, moderation keeps your customer trust strong and your comment section clean.
               </p>
             </CardContent>
             <CardFooter>
@@ -256,33 +279,11 @@ const Index = () => {
               </Button>
             </CardFooter>
           </Card>
-          <Card className="bg-[#222222] border-[#333333]">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#9b87f5] to-[#33C3F0] flex items-center justify-center mb-4">
-                <MessageSquare className="text-white" />
-              </div>
-              <CardTitle >
-                
-              </CardTitle>
-              <CardTitle className="text-white">
-                Smart replies handle FAQs instantly
-              </CardTitle>
-              <CardFooter>  </CardFooter>
-            </CardHeader>
-          </Card>          
+
         </div>
         
         
-        <div className="w-full md:w-1/2 lg:w-1/3 p-4">
-  <div className="bg-[#121212] rounded-2xl p-6 shadow-md border border-gray-700 hover:bg-[#1f1f1f] transition-all duration-300">
-    <h3 className="text-white text-lg font-semibold mb-2">
-      Smart replies handle <span className="text-[#9b87f5]">FAQs</span> instantly
-    </h3>
-    <p className="text-gray-300 text-sm">
-      Let the AI assist with common questions, reducing your manual workload.
-    </p>
-  </div>
-</div>
+
 
       </section>
 
