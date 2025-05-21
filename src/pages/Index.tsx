@@ -70,10 +70,10 @@ const Index = () => {
       {/* Hero Section */}
       <section className="container mx-auto py-20 flex flex-col md:flex-row items-center">
         <div className="md:w-1/2 mb-10 md:mb-0">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Let Your AI Clone Talk to Your Fans —
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+            Let Your AI Clone Talk to Your Followers— 
             <span className="bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] bg-clip-text text-transparent">
-              Even When You Can't.
+               Even When You Can't.
             </span>
           </h1>
           <p className="text-xl text-gray-300 mb-8">
