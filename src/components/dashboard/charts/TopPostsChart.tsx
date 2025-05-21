@@ -1,11 +1,25 @@
-
 import React from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BarChartHorizontal } from "lucide-react";
-import { Bar, BarChart, ResponsiveContainer, XAxis, YAxis, Tooltip } from "recharts";
-import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  BarChart,
+  ResponsiveContainer,
+  XAxis,
+  YAxis,
+  Tooltip,
+  Bar,
+} from "recharts";
+import {
+  ChartContainer,
+  ChartTooltip,
+  ChartTooltipContent,
+} from "@/components/ui/chart";
 
-// Sample data for the chart
 const topPostsData = [
   {
     id: "post1",
@@ -60,9 +74,13 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     return (
-      <div className="bg-[#333] p-3 rounded-md shadow-lg border border-[#cde6f9]">
+      <div className="bg-[#333] p-3 rounded-md shadow-lg border border-[#cde6f9] text-white">
         <div className="flex items-center gap-3">
-          <img src={data.thumbnail} alt={data.name} className="w-10 h-10 rounded" />
+          <img
+            src={data.thumbnail}
+            alt={data.name}
+            className="w-10 h-10 rounded"
+          />
           <div>
             <p className="font-medium">{data.name}</p>
             <p className="text-xs text-gray-400">{data.date}</p>
@@ -70,7 +88,8 @@ const CustomTooltip = ({ active, payload }: CustomTooltipProps) => {
         </div>
         <div className="mt-2">
           <p className="text-sm">
-            <span className="font-bold text-[#9b87f5]">{data.engagement}</span> total engagements
+            <span className="font-bold text-[#9b87f5]">{data.engagement}</span>{" "}
+            total engagements
           </p>
         </div>
       </div>
@@ -83,7 +102,9 @@ const TopPostsChart = () => {
   return (
     <Card className="bg-[#222222] border-[#cde6f9]">
       <CardHeader className="pb-2">
-        <CardTitle className="text-lg font-medium text-white">Top Performing Posts</CardTitle>
+        <CardTitle className="text-lg font-medium text-white">
+          Top Performing Posts
+        </CardTitle>
         <CardDescription className="text-muted-foreground">
           Posts with highest engagement rates
         </CardDescription>
@@ -104,10 +125,10 @@ const TopPostsChart = () => {
                   width={150}
                   axisLine={false}
                   tickLine={false}
-                  tick={(props) => {
-                    const { x, y, payload } = props;
-                    const post = topPostsData.find((p) => p.name === payload.value);
-                    
+                  tick={({ x, y, payload }) => {
+                    const post = topPostsData.find(
+                      (p) => p.name === payload.value
+                    );
                     return (
                       <g transform={`translate(${x},${y})`}>
                         <foreignObject width="130" height="50" x="-140" y="-25">
@@ -117,7 +138,9 @@ const TopPostsChart = () => {
                               alt={post?.name}
                               className="w-8 h-8 rounded mr-3"
                             />
-                            <span className="text-xs truncate block w-[90px]">{payload.value}</span>
+                            <span className="text-xs truncate block w-[90px] text-white">
+                              {payload.value}
+                            </span>
                           </div>
                         </foreignObject>
                       </g>
@@ -130,7 +153,8 @@ const TopPostsChart = () => {
                   fill="url(#colorGradient)"
                   radius={[0, 4, 4, 0]}
                   barSize={20}
-                  animationDuration={1500}
+                  isAnimationActive={false}
+                  activeBar={{ fill: "url(#colorGradient)" }}
                 />
                 <defs>
                   <linearGradient id="colorGradient" x1="0" y1="0" x2="1" y2="0">
