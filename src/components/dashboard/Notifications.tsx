@@ -74,7 +74,7 @@ const Notifications = () => {
   };
 
   return (
-    <Card className="bg-[#222222] border border-[#cde6f9] text-white w-full max-w-xl mx-auto">
+<Card className="bg-[#222222] border border-[#cde6f9] text-white w-full max-w-3xl mx-auto">
       <CardHeader className="pb-2">
         <div className="flex justify-between items-center flex-wrap gap-2">
           <CardTitle className="text-lg font-medium flex items-center">

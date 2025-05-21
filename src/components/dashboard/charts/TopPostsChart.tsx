@@ -110,9 +110,10 @@ const TopPostsChart = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="h-[250px] mt-2">
+        <div className="max-h-[280px] overflow-auto mt-2">
           <ChartContainer config={chartConfig}>
-            <ResponsiveContainer width="100%" height="100%">
+            <ResponsiveContainer width="100%" height={topPostsData.length * 60}>
+
               <BarChart
                 layout="vertical"
                 data={topPostsData}
