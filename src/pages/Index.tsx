@@ -32,7 +32,7 @@ const Index = () => {
         {" "}
         <div className="flex items-center">
           <img
-            src="/lovable-uploads/83b6ed76-491d-4cee-96e2-c8e5f35ed908.png"
+            src=""
             alt="Fluence AI Logo"
             className="h-8 w-8 mr-2"
           />
@@ -108,8 +108,8 @@ const Index = () => {
         </div>
         <div className="md:w-1/2 relative">
           <div className="bg-[#222222] rounded-lg p-6 shadow-[0_0_30px_rgba(155,135,245,0.3)]">
-            <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full ">
+            <div className="flex items-center mb-6">
+              <div className="w-10 h-10 rounded-full mr-4">
                 <img
                   src={websiteImag}
                   alt="Website preview"
@@ -122,7 +122,7 @@ const Index = () => {
               </div>
             </div>
             <div className="mb-4 ">
-              <p className="text-sm text-gray-300 text-left ">Replying to @fan_username</p>
+              <p className="text-sm text-gray-300 text-left padding">Replying to @fan_username</p>
               <p>
                 Thanks for watching my latest video! The camera setup details
                 are in the description. Let me know if you have other questions!
