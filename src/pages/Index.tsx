@@ -645,7 +645,7 @@ const Index = () => {
       </section>
 
       {/* Pricing */}
-      <section className="container mx-auto py-20">
+      {/* <section className="container mx-auto py-20">
         <h2
           id="Pricing"
           className="text-3xl md:text-4xl font-bold text-center mb-4"
@@ -983,7 +983,7 @@ const Index = () => {
             </CardFooter>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Footer */}
       <footer className="bg-[#222222] py-16">
