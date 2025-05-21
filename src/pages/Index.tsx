@@ -11,6 +11,9 @@ import {
 import { MessageSquare, Phone, Film, Shield, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../lib/config";
+import websiteImage from '../assets/website_image_1.png';
+
+
 
 fetch(`${API_BASE_URL}/getallMedia/101`)
   .then((res) => res.json())
@@ -297,6 +300,15 @@ const Index = () => {
             Your AI clone learns your voice, style, and knowledge to engage with
             your audience across platforms.
           </p>
+
+     {/* image */}
+
+          <img
+            src={websiteImage}
+            alt="Website preview"
+            className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+          />
+          <br></br><br></br><br></br>
 
           <div className="flex flex-col md:flex-row justify-between items-center mb-20">
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-8">
