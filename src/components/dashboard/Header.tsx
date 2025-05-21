@@ -22,14 +22,14 @@ const Header = ({ onMenuClick }: HeaderProps) => {
         <button className="md:hidden" onClick={onMenuClick}>
           <Menu className="h-6 w-6" />
         </button>
-        <div>
+        {/* <div>
           <h1 className="text-2xl font-bold">
             Welcome, y_covers <span role="img">👋</span>
           </h1>
           <p className="text-muted-foreground">
             Here's how your AI is engaging your Instagram audience today.
           </p>
-        </div>
+        </div> */}
       </div>
       <div className="flex items-center space-x-4">
         <Button variant="ghost" size="icon" className="relative">
