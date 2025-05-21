@@ -122,7 +122,7 @@ const Index = () => {
               </div>
             </div>
             <div className="mb-4 ">
-              <p className="text-sm text-gray-300 text-left padding">Replying to @fan_username</p>
+              <p className="text-sm text-gray-300 text-center padding">Replying to @fan_username</p>
               <p>
                 Thanks for watching my latest video! The camera setup details
                 are in the description. Let me know if you have other questions!
