@@ -13,6 +13,10 @@ import { Link } from "react-router-dom";
 import { API_BASE_URL } from "../lib/config";
 import websiteImage from '../assets/website_image_1.png';
 import websiteImag from '../assets/agi1.png';
+import websiteIma from '../assets/agi1.png';
+import websiteIm from '../assets/gdgoc hd logo squared.jpg';
+import websiteI from "..//assets/y_covers.jpg";
+
 
 
 
@@ -87,7 +91,7 @@ const Index = () => {
           <div className="flex flex-wrap gap-4">
             <Button
               size="lg"
-              className="bg-[#9b87f5] hover:bg-[#7E69AB] text-white"
+              className="bg-[#9b87f5] hover:bg-[#7E69AB] border-gray-900 text-gray-900"
               asChild
             >
               <Link to="/Automations">Create Your Clone</Link>
@@ -95,7 +99,7 @@ const Index = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-[#33C3F0] text-[#33C3F0] hover:bg-[#33C3F0]/10"
+              className="border-[#33C3F0] text-[#103f4e] hover:bg-[#33C3F0]/10"
               asChild
             >
               <Link to="">Video Guide </Link>
@@ -105,14 +109,20 @@ const Index = () => {
         <div className="md:w-1/2 relative">
           <div className="bg-[#222222] rounded-lg p-6 shadow-[0_0_30px_rgba(155,135,245,0.3)]">
             <div className="flex items-center mb-4">
-              <div className="w-10 h-10 rounded-full bg-gradient-to-r "></div>
+              <div className="w-10 h-10 rounded-full ">
+                <img
+                  src={websiteImag}
+                  alt="Website preview"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
               <div>
                 <p className="font-bold">Tech Burner</p>
                 <p className="text-sm text-gray-400">Original Creator</p>
               </div>
             </div>
-            <div className="mb-4">
-              <p className="text-sm text-gray-300"  >Replying to @fan_username</p>
+            <div className="mb-4 ">
+              <p className="text-sm text-gray-300 text-left ">Replying to @fan_username</p>
               <p>
                 Thanks for watching my latest video! The camera setup details
                 are in the description. Let me know if you have other questions!
@@ -423,11 +433,18 @@ const Index = () => {
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="order-2 md:order-1 md:w-1/2 bg-[#222222] rounded-lg p-6 ">
-              <div className="bg-[#1A1F2C] rounded-lg p-4 mb-4 shadow-lg" >
+              <div className="bg-[#1A1F2C] rounded-lg p-4 mb-4 shadow-lg " >
                 <div className="flex items-center">
-                  <div className="w-8 h-8 rounded-full bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] mr-2"></div>
-                  <p>Your AI Clone</p>
+                  <div className="w-8 h-8 rounded-full">
+                    <img
+                      src={websiteIma}
+                      alt="Website preview"
+                      className="w-full h-auto object-cover rounded-full"
+                    />
+                  </div>
+                  <p className="ml-3">Your AI Clone</p> {/* ← adds spacing between image and text */}
                 </div>
+
                 <p className="mt-2">
                   Thanks for reaching out! I'd love to collaborate on your
                   project. Let me check my schedule and get back to you with
@@ -523,10 +540,16 @@ const Index = () => {
             <div className="bg-gradient-to-br from-[#1A1F2C] to-[#000000e6] p-1 rounded-lg">
               <div className="bg-[#1A1F2C] rounded-lg p-6 h-full">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
+                  <div className="w-12 h-12 rounded-full bg-[#333333] mr-4">
+                    <img
+                      src={websiteI}
+                      alt="Website preview"
+                      className="w-full h-full object-cover rounded-full"
+                    />
+                  </div>
                   <div>
                     <p className="font-bold">@y_covers</p>
-                    <p className="text-sm text-gray-400">1000 Followers</p>
+                    <p className="text-sm text-gray-400">1K Followers</p>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
@@ -548,13 +571,22 @@ const Index = () => {
             </div>
             <div className="bg-gradient-to-br from-[#1A1F2C] to-[#000000e6] p-1 rounded-lg">
               <div className="bg-[#1A1F2C] rounded-lg p-6 h-full">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
-                  <div>
-                    <p className="font-bold">@gdgoc.ietdavv</p>
-                    <p className="text-sm text-gray-400">1.5K Followers</p>
+                <div className="flex items-center mb-4" >
+                  <div className="w-12 h-12 rounded-full bg-[#333333] mb-1">
+                    <img
+                        src={websiteIm}
+                        alt="Website preview"
+                        className="w-full h-full object-cover rounded-full"
+                      />
                   </div>
-                </div>
+                    <div className="w-10 h-10 rounded-full  ">
+                      
+                    </div>
+                        <div>
+                          <p className="font-bold">@gdgoc.ietdavv</p>
+                          <p className="text-sm text-gray-400">1.5K Followers</p>
+                        </div>
+                      </div>
                 <p className="text-gray-300 mb-4">
                   "As a community, we need to grow and engage. This tool
                    allows us to be present without being present. I can focus on"
