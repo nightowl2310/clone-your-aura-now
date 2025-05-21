@@ -1,6 +1,6 @@
-
+/* --- Updated Header.tsx --- */
 import React from "react";
-import { Bell, Settings, User, LogOut, ChevronDown } from "lucide-react";
+import { Bell, Settings, User, LogOut, ChevronDown, Menu } from "lucide-react";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -11,19 +11,25 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 
-const Header = () => {
+interface HeaderProps {
+  onMenuClick: () => void;
+}
+
+const Header = ({ onMenuClick }: HeaderProps) => {
   return (
     <header className="flex justify-between items-center py-4">
-      <div>
-        <h1 className="text-2xl font-bold">
-          Welcome, y_covers{" "}
-          <span role="img" aria-label="wave">
-            👋
-          </span>
-        </h1>
-        <p className="text-muted-foreground">
-          Here's how your AI is engaging your Instagram audience today.
-        </p>
+      <div className="flex items-center gap-4">
+        <button className="md:hidden" onClick={onMenuClick}>
+          <Menu className="h-6 w-6" />
+        </button>
+        <div>
+          <h1 className="text-2xl font-bold">
+            Welcome, y_covers <span role="img">👋</span>
+          </h1>
+          <p className="text-muted-foreground">
+            Here's how your AI is engaging your Instagram audience today.
+          </p>
+        </div>
       </div>
       <div className="flex items-center space-x-4">
         <Button variant="ghost" size="icon" className="relative">

@@ -284,41 +284,42 @@ const Index = () => {
           </Card>
 
         </div>
-        
-        
+      
+      </section>
 
+      <section>     {/* image */}
 
+      <div className="w-full">
+        <img
+          src={websiteImage}
+          alt="Website preview"
+          className="w-full h-auto object-contain"
+        />
+      </div>
       </section>
 
       {/* Product Overview */}
+      
       <section className="bg-[#222222] py-20">
         <div className="container mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+          {/* <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             How FluenceAI Works
           </h2>
           <p className="text-gray-300 text-center mb-16 max-w-2xl mx-auto">
             Your AI clone learns your voice, style, and knowledge to engage with
             your audience across platforms.
-          </p>
+          </p> */}
 
-     {/* image */}
-
-          <img
-            src={websiteImage}
-            alt="Website preview"
-            // className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
-          />
-          <br></br><br></br><br></br>
 
           <div className="flex flex-col md:flex-row justify-between items-center mb-20">
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-8">
-              <h3 className="text-2xl font-bold mb-4 text-[#9b87f5]">
-                Train Your AI Clone
-              </h3>
-              <p className="text-gray-300 mb-4">
-                Our system analyzes your content, voice patterns, and response
-                style to create an accurate digital copy of your online persona.
-              </p>
+              <h1 className="text-5xl font-bold mb-4 text-[#9b87f5]">
+                Train Your AI Clone 
+              </h1>
+              <h2 className="text-gray-400 mr-2 text-2xl ">
+                FluenceAI analyzes your Existed content, Tags, and response patterns to create an accurate digital copy of your online persona.
+              </h2>
+              <br></br><br></br>
               <div className="grid grid-cols-2 gap-4">
                 <div className="flex items-center">
                   <Film className="text-[#33C3F0] mr-2" />
@@ -368,7 +369,7 @@ const Index = () => {
                   some ideas.
                 </p>
               </div>
-              <div className="bg-[#2d2d2d] rounded-lg p-4">
+              {/* <div className="bg-[#2d2d2d] rounded-lg p-4">
                 <div className="flex items-center mb-2">
                   <Phone className="text-[#33C3F0] mr-2" size={16} />
                   <p className="text-sm">Voice Call</p>
@@ -386,7 +387,7 @@ const Index = () => {
                     style={{ width: "60%" }}
                   ></div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="order-1 md:order-2 md:w-1/2 mb-10 md:mb-0 md:pl-8">
               <h3 className="text-2xl font-bold mb-4 text-[#D946EF]">

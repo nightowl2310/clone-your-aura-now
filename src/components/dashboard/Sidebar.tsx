@@ -1,3 +1,4 @@
+/* --- Updated Sidebar.tsx --- */
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
@@ -8,25 +9,26 @@ import {
   Settings,
   LogOut,
   Bot,
+  X
 } from "lucide-react";
 
 interface SidebarItemProps {
   icon: React.ElementType;
   href: string;
   label: string;
+  onClick?: () => void;
 }
 
-const SidebarItem = ({ icon: Icon, href, label }: SidebarItemProps) => {
+const SidebarItem = ({ icon: Icon, href, label, onClick }: SidebarItemProps) => {
   const location = useLocation();
   const isActive =
     location.pathname === href ||
-    (href !== "/" &&
-      href !== "/dashboard" &&
-      location.pathname.startsWith(href));
+    (href !== "/" && href !== "/dashboard" && location.pathname.startsWith(href));
 
   return (
     <Link
       to={href}
+      onClick={onClick}
       className={cn(
         "flex items-center py-3 px-4 rounded-2xl transition-colors shadow-sm hover:shadow-md",
         isActive
@@ -40,34 +42,43 @@ const SidebarItem = ({ icon: Icon, href, label }: SidebarItemProps) => {
   );
 };
 
-const Sidebar = () => {
+interface SidebarProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
   return (
-    <aside className="hidden md:flex flex-col w-64 p-4 border-r border-border">
-      <div className="flex items-center mb-8 px-4">
-        <img
-          src="/lovable-uploads/83b6ed76-491d-4cee-96e2-c8e5f35ed908.png"
-          alt="Fluence AI Logo"
-          className="h-8 w-8 mr-2"
-        />
-        <a href="/" className="your-classes">
-          <span className="text-xl font-bold bg-gradient-to-r from-[#33C3F0] to-[#3B34DC] bg-clip-text text-transparent">
+    <aside
+      className={cn(
+        "fixed top-0 left-0 h-full w-64 bg-[#1A1F2C] text-white z-40 p-4 border-r border-border transform transition-transform duration-300 md:relative md:translate-x-0 md:flex",
+
+        isOpen ? "translate-x-0" : "-translate-x-full",
+        "md:flex-col hidden"
+      )}
+    >
+      <div className="flex items-center justify-between mb-8 px-4 md:justify-start">
+        <div className="flex items-center">
+          <img
+            src="/lovable-uploads/83b6ed76-491d-4cee-96e2-c8e5f35ed908.png"
+            alt="Fluence AI Logo"
+            className="h-8 w-8 mr-2"
+          />
+          <a href="/" className="text-xl font-bold bg-gradient-to-r from-[#33C3F0] to-[#3B34DC] bg-clip-text text-transparent">
             Fluence AI
-          </span>
-        </a>
+          </a>
+        </div>
+        <button className="md:hidden" onClick={onClose}>
+          <X className="h-6 w-6" />
+        </button>
       </div>
       <nav className="space-y-2 flex-1">
-        <SidebarItem
-          icon={BarChartHorizontal}
-          href="/dashboard"
-          label="Dashboard"
-        />
-        <SidebarItem icon={Bot} href="/automations" label="Automations" />
-        {/* <SidebarItem icon={Users} href="/contacts" label="Contacts" /> */}
-        {/* <SidebarItem icon={Gift} href="/refer" label="Refer & Earn" /> */}
-        <SidebarItem icon={Settings} href="/settings" label="Settings" />
+        <SidebarItem icon={BarChartHorizontal} href="/dashboard" label="Dashboard" onClick={onClose} />
+        <SidebarItem icon={Bot} href="/automations" label="Automations" onClick={onClose} />
+        <SidebarItem icon={Settings} href="/settings" label="Settings" onClick={onClose} />
       </nav>
       <div className="mt-auto">
-        <SidebarItem icon={LogOut} href="/" label="Logout" />
+        <SidebarItem icon={LogOut} href="/" label="Logout" onClick={onClose} />
       </div>
     </aside>
   );
