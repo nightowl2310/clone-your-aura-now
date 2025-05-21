@@ -446,14 +446,12 @@ const Index = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
                   <div>
-                    <p className="font-bold">@CodeWithy_covers</p>
-                    <p className="text-sm text-gray-400">100K Subscribers</p>
+                    <p className="font-bold">@y_covers</p>
+                    <p className="text-sm text-gray-400">1000 Followers</p>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  "My AI clone now replies to 90% of my comments. Game changer!
-                  I can focus on creating while still maintaining high
-                  engagement."
+                  "Replied to 500+ comments on my dance reel that hit 2M views — saw 18% growth in 2 days. Super happy with the results!"
                 </p>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -474,13 +472,13 @@ const Index = () => {
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 rounded-full bg-[#333333] mr-4"></div>
                   <div>
-                    <p className="font-bold">@DesignGuru</p>
-                    <p className="text-sm text-gray-400">250K Followers</p>
+                    <p className="font-bold">@gdgoc.ietdavv</p>
+                    <p className="text-sm text-gray-400">1.5K Followers</p>
                   </div>
                 </div>
                 <p className="text-gray-300 mb-4">
-                  "Fans loved hearing my AI voice reply to them. It's surreal.
-                  The personalized touch keeps my community super engaged."
+                  "As a community, we need to grow and engage. This tool
+                   allows us to be present without being present. I can focus on"
                 </p>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
