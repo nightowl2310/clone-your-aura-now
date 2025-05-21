@@ -306,7 +306,7 @@ const Index = () => {
           <img
             src={websiteImage}
             alt="Website preview"
-            className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+            // className="w-full h-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
           />
           <br></br><br></br><br></br>
 
