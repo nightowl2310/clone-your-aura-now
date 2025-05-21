@@ -54,11 +54,7 @@ const Index = () => {
             FAQ
           </Button>
         </div>
-        <Link to="/login">
-          <Button className="mr-2 border-[#9b87f5] text-white hover:bg-[#9b87f5]/10">
-            Login
-          </Button>
-        </Link>
+        
         <div>
           <Link to="/login">
             <Button className="mr-2 border-[#9b87f5] text-white hover:bg-[#9b87f5]/10">
