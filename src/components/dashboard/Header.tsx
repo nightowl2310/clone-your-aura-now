@@ -19,6 +19,8 @@ const Header = ({ onMenuClick }: HeaderProps) => {
   return (
     <header className="flex justify-between items-center py-4">
       <div className="flex items-center gap-4">
+
+        
         <button className="md:hidden" onClick={onMenuClick}>
           <Menu className="h-6 w-6" />
         </button>
@@ -36,6 +38,7 @@ const Header = ({ onMenuClick }: HeaderProps) => {
           <Bell className="h-5 w-5" />
           <span className="absolute top-0 right-0 w-2 h-2 bg-[#3B34DC] rounded-full"></span>
         </Button>
+        
         <Button variant="ghost" size="icon">
           <Settings className="h-5 w-5" />
         </Button>

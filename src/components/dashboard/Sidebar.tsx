@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
+import fluenceailogo from "../../assets/logo_fluenceai.png" ;
 import {
   BarChartHorizontal,
   Users,
@@ -69,10 +70,10 @@ const Sidebar = ({ isOpen, onClose }: SidebarProps) => {
     <div className="flex items-center justify-between mb-8 px-4 md:justify-start">
       <div className="flex items-center">
         <img
-          src="/lovable-uploads/83b6ed76-491d-4cee-96e2-c8e5f35ed908.png"
-          alt="Fluence AI Logo"
-          className="h-8 w-8 mr-2"
-        />
+            src={fluenceailogo}
+            alt="Fluence AI Logo"
+            className="h-8 w-8 mr-2"
+          />
         <a
           href="/"
           className="text-xl font-bold bg-gradient-to-r from-[#33C3F0] to-[#3B34DC] bg-clip-text text-transparent"

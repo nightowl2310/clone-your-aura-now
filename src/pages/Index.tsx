@@ -31,7 +31,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="container mx-auto py-6 flex justify-between items-center">
         {" "}
-        <div className="">
+        <div className=" flex">
           <img
             src={fluenceailogo}
             alt="Fluence AI Logo"
@@ -123,7 +123,7 @@ const Index = () => {
                 />
               </div>
               <div>
-                <p className="font-bold">y_covers</p>
+                <p className="font-bold">_ycovers_</p>
                 <p className="text-sm text-gray-400">Original Creator</p>
               </div>
             </div>
@@ -556,7 +556,7 @@ const Index = () => {
                     />
                   </div>
                   <div>
-                    <p className="font-bold">@y_covers</p>
+                    <p className="font-bold">@_ycovers_</p>
                     <p className="text-sm text-gray-400">1K Followers</p>
                   </div>
                 </div>
@@ -1013,9 +1013,11 @@ const Index = () => {
             </Button>
             <Button
               size="lg"
-              className="border-white text-white hover:bg-white/10"
+              variant="outline"
+              className="border-[#33C3F0] text-[#103f4e] hover:bg-[#33C3F0]/10"
+              asChild
             >
-              <a href="#pricing">View Pricing</a>
+              <a href="tel:+91 7828115995">Contact Us</a>
             </Button>
           </div>
         </div>
