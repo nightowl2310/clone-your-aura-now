@@ -20,6 +20,7 @@ import y_covers from '..//assets/y_covers.jpg';
 
 
 
+
 fetch(`${API_BASE_URL}/getallMedia/101`)
   .then((res) => res.json())
   .then((data) => console.log(data));
@@ -76,17 +77,21 @@ const Index = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="container mx-auto py-20 flex flex-col md:flex-row items-center">
+      <section className="container mx-auto py-20 flex flex-col md:flex-row items-center md:gap-x-12">
         <div className="md:w-1/2 mb-10 md:mb-0">
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-            Let Your AI Clone Talk to Your Followers— 
-            <span className="bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] bg-clip-text text-transparent">
-               Even When You Can't.
-            </span>
+          <h1 className="text-5xl md:text-5xl font-bold mb-6 mr-2 leading-tight">Turn Every  
+            <span className="bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] bg-clip-text text-transparent"> Comment </span>
+            into a 
+            <span className="bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] bg-clip-text text-transparent"> Customer </span>
+            
+
+            
           </h1>
-          <p className="text-xl text-gray-300 mb-8">
-            Scale your voice, replies, and personality across comments, DMs, and
-            calls — effortlessly.
+          <p className="text-2xl text-gray-300 mb-8">
+            Auto-engage with fans 24/7 via comments, DMs, and stories—
+            <span className="bg-gradient-to-r from-[#9b87f5] to-[#33C3F0] bg-clip-text text-transparent">
+               and watch your leads grow on autopilot.
+            </span>
           </p>
           <div className="flex flex-wrap gap-4">
             <Button
@@ -106,9 +111,9 @@ const Index = () => {
             </Button>
           </div>
         </div>
-        <div className="md:w-1/2 relative">
-          <div className="bg-[#222222] rounded-lg p-6 shadow-[0_0_30px_rgba(155,135,245,0.3)]">
-            <div className="flex items-center mb-6">
+        <div className="md:w-1/2 relative ">
+          <div className="bg-[#222222] rounded-lg p-6  shadow-[0_0_30px_rgba(155,135,245,0.3)]">
+            <div className="flex items-center mb-6 " >
               <div className="w-10 h-10 rounded-full mr-4">
                 <img
                   src={y_covers}
@@ -271,7 +276,7 @@ const Index = () => {
                 <MessageSquare className="text-white" />
               </div>
               <CardTitle className="text-white">
-                Reply Like a Pro (Without Lifting a Finger)
+                Works while you sleep
               </CardTitle>
               <CardDescription className="text-gray-400">
                 {/* Let AI handle the replies — you stay in the spotlight. */}
@@ -279,7 +284,8 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-400" justify-content="jus">
-                Automatically respond to every Comment & DM with your brand’s tone and voice. Whether you're launching products or promoting services, let FluenceAI handle engagement — turning passive followers into active buyers while you focus on building your business.
+                Auto-respond to comments, DMs, and story mentions in your tone. 
+                No breaks. No missed comments. Your brand engages 24/7 — even when you’re offline or live.
               </p>
             </CardContent>
             <CardFooter>
@@ -297,7 +303,7 @@ const Index = () => {
                 <Phone className="text-white" />
               </div>
               <CardTitle className="text-white">
-                Talk to Followers Without Saying a Word
+                Always On-Brand
               </CardTitle>
               <CardDescription className="text-gray-400">
                 {/* Your AI twin, your voice — now always available. */}
@@ -305,7 +311,7 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-400">
-                Let your AI twin manage voice messages and fan calls using your actual voice. Perfect for creators selling products or services — your AI stays live 24/7, nurturing leads, handling FAQs, and making every fan feel heard, even when you're offline or busy scaling your brand.
+                AI that sounds like you — not like a bot. It learns your tone, values, and boundaries, so every reply feels personal, intentional, and true to your voice.
               </p>
             </CardContent>
             <CardFooter>
@@ -317,46 +323,47 @@ const Index = () => {
               </Button>
             </CardFooter>
           </Card>
-          <Card className="bg-[#222222] border-[#333333]">
-            <CardHeader>
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#33C3F0] to-[#9b87f5] flex items-center justify-center mb-4">
-                <Film className="text-white" />
-              </div>
-              <CardTitle className="text-white">
-                Boost Engagement on Autopilot 🚀
-              </CardTitle>
-              <CardDescription className="text-gray-400">
-                {/* Let AI turn comments into connections — and Followers into followers. */}
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-gray-400">
-                More engagement = more visibility = more sales. Our AI smartly replies to every comment and message, keeping your account buzzing with activity. Instagram’s algorithm rewards that — which means more eyes on your offers and faster growth for your online business.
-              </p>
-            </CardContent>
-            <CardFooter>
-              <Button
-                variant="ghost"
-                className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
-              >
-                Learn more <ArrowRight size={16} className="ml-2" />
-              </Button>
-            </CardFooter>
+          <Card className="bg-[#222222] border-[#333333] flex flex-col h-full">
+              <CardHeader>
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#33C3F0] to-[#9b87f5] flex items-center justify-center mb-4">
+                  <Film className="text-white" />
+                </div>
+                <CardTitle className="text-white">Engage. Grow. Repeat</CardTitle>
+                <CardDescription className="text-gray-400">
+                  {/* Optional description */}
+                </CardDescription>
+              </CardHeader>
+
+              <CardContent className="text-gray-400">
+                <p>
+                  Turn every interaction into a lead. Boost engagement. Win the algorithm. Watch your followers turn into buyers.
+                </p>
+              </CardContent>
+
+              {/* Push footer to bottom */}
+              <CardFooter className="mt-auto">
+                <Button
+                  variant="ghost"
+                  className="text-[#9b87f5] p-0 hover:text-[#D946EF] hover:bg-transparent"
+                >
+                  Learn more <ArrowRight size={16} className="ml-2" />
+                </Button>
+              </CardFooter>
           </Card>
+
           <Card className="bg-[#222222] border-[#333333]">
             <CardHeader>
               <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#D946EF] to-[#33C3F0] flex items-center justify-center mb-4">
                 <Shield className="text-white" />
               </div>
-              <CardTitle className="text-white">Safe & Moderated: Always in control</CardTitle>
+              <CardTitle className="text-white"> Smart Analytics Dashboard</CardTitle>
               <CardDescription className="text-gray-400">
                 {/* Always-On AI Protection */}
               </CardDescription>
             </CardHeader>
             <CardContent>
               <p className="text-gray-400">
-                Your brand’s reputation matters. FluenceAI ensures all responses are on-brand, professional, and audience-appropriate — Whether you're selling digital products, courses, or services, moderation keeps your customer trust strong and your comment section clean.
-              </p>
+                See what’s working in real time. Track replies, link clicks, conversions, and engagement — all in one clean dashboard.              </p>
             </CardContent>
             <CardFooter>
               <Button
