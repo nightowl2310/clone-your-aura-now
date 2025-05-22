@@ -480,48 +480,48 @@ const Index = () => {
               </div> */}
             </div>
             <div className="order-1 md:order-2 md:w-1/2 mb-10 md:mb-0 md:pl-8">
-              <h3 className="text-2xl font-bold mb-4 text-[#D946EF]">
-                Engage Across Platforms
-              </h3>
-              <p className="text-gray-300 mb-4">
-                Your AI clone responds to comments, DMs, and even takes calls
-                with your voice and personality.
-              </p>
-              <div className="space-y-4">
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-[#222222] flex items-center justify-center mr-4">
-                    <MessageSquare className="text-[#D946EF]" size={20} />
+                <h3 className="text-2xl font-bold mb-4 text-[#D946EF] text-left">
+                  Engage Across Platforms
+                </h3>
+                <p className="text-gray-300 mb-4 text-left">
+                  Your AI clone responds to comments, DMs, and even takes calls
+                  with your voice and personality.
+                </p>
+                <div className="space-y-4 max-w-md"> 
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 rounded-full bg-[#222222] flex-shrink-0 flex items-center justify-center mr-4">
+                      <MessageSquare className="text-[#D946EF]" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white text-left">YouTube Comments</p>
+                      <p className="text-sm text-gray-400 mt-1 text-left">
+                        Reply to thousands of Followers automatically
+                      </p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="font-semibold">YouTube Comments</p>
-                    <p className="text-sm text-gray-400">
-                      Reply to thousands of Followers automatically
-                    </p>
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 rounded-full bg-[#222222] flex-shrink-0 flex items-center justify-center mr-4">
+                      <MessageSquare className="text-[#D946EF]" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white text-left">Instagram & Twitter DMs</p>
+                      <p className="text-sm text-gray-400 mt-1 text-left">
+                        Never miss a message from Followers
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 rounded-full bg-[#222222] flex-shrink-0 flex items-center justify-center mr-4">
+                      <Phone className="text-[#D946EF]" size={20} />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white text-left">Voice Calls & Messages</p>
+                      <p className="text-sm text-gray-400 mt-1 text-left">
+                        Personal connection at scale
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-[#222222] flex items-center justify-center mr-4">
-                    <MessageSquare className="text-[#D946EF]" size={20} />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Instagram & Twitter DMs</p>
-                    <p className="text-sm text-gray-400">
-                      Never miss a message from Followers
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-10 h-10 rounded-full bg-[#222222] flex items-center justify-center mr-4">
-                    <Phone className="text-[#D946EF]" size={20} />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Voice Calls & Messages</p>
-                    <p className="text-sm text-gray-400">
-                      Personal connection at scale
-                    </p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -579,25 +579,22 @@ const Index = () => {
             </div>
             <div className="bg-gradient-to-br from-[#1A1F2C] to-[#000000e6] p-1 rounded-lg">
               <div className="bg-[#1A1F2C] rounded-lg p-6 h-full">
-                <div className="flex items-center mb-4" >
-                  <div className="w-12 h-12 rounded-full bg-[#333333] mb-1">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 rounded-full bg-[#333333] mr-4">
                     <img
-                        src={gdgoc}
-                        alt="Website preview"
-                        className="w-full h-full object-cover rounded-full"
-                      />
+                      src={gdgoc}
+                      alt="Website preview"
+                      className="w-full h-full object-cover rounded-full"
+                    />
                   </div>
-                    <div className="w-10 h-10 rounded-full  ">
-                      
-                    </div>
-                        <div>
-                          <p className="font-bold">@gdgoc.ietdavv</p>
-                          <p className="text-sm text-gray-400">1.5K Followers</p>
-                        </div>
-                      </div>
+                  <div>
+                    <p className="font-bold">@gdgoc.ietdavv</p>
+                    <p className="text-sm text-gray-400">1.5K Followers</p>
+                  </div>
+                </div>
                 <p className="text-gray-300 mb-4">
-                  "As a community, we need to grow and engage. This tool
-                   allows us to be present without being present. I can focus on"
+                  "As a community, we need to grow and engage. This tool allows us to be
+                  present without being present. I can focus on"
                 </p>
                 <div className="flex">
                   {[1, 2, 3, 4, 5].map((star) => (
@@ -613,6 +610,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
+
             {/* <div className="bg-gradient-to-br from-[#1A1F2C] to-[#000000e6] p-1 rounded-lg">
               <div className="bg-[#1A1F2C] rounded-lg p-6 h-full">
                 <div className="flex items-center mb-6">
