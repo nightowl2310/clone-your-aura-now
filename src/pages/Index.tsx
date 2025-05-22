@@ -107,8 +107,9 @@ const Index = () => {
               className="border-[#33C3F0] text-[#103f4e] hover:bg-[#33C3F0]/10"
               asChild
             >
-              <Link to="">Video Guide </Link>
+              <a href="tel:+91 7828115995">Contact Us</a>
             </Button>
+
           </div>
         </div>
         <div className="md:w-1/2 relative ">
